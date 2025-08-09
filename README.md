@@ -2,6 +2,11 @@
 
 A structured workspace for a 26-week self-study program inspired by ERA V4. This repo includes a clean project layout, segmented requirements, dev tooling, and starter notebooks to help you progress from fundamentals to advanced topics.
 
+## Course info
+
+- **Self-study plan (in repo)**: see `docs/plan.md`
+- **Official ERA V4 course syllabus**: [ERA V4 Course Syllabus (PDF)](https://s3.us-east-1.amazonaws.com/theschoolof.ai/ERA+V4+Course+Syllabus.pdf)
+
 ## Quickstart (uv recommended)
 
 Install `uv` (one-time):
@@ -19,7 +24,6 @@ python -m ipykernel install --user --name era-v4 --display-name "Python (era-v4)
 
 jupyter lab
 ```
-
 
 ## Repo Layout
 
