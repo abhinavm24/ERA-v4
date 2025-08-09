@@ -75,10 +75,33 @@ It preserves all topics and resources. When content becomes too dense or duplica
 
 </details>
 
-- [Phase 5: Capstone & Portfolio (Weeks 25–26)](#phase-5)
-- [Compute Resource Strategy (Free → Low-cost → Credits)](#compute)
+<details>
+<summary>Phase 5: Capstone & Portfolio (Weeks 25–26)</summary>
+
+- [Capstone & Portfolio](#phase-5)
+
+</details>
+
+<details>
+<summary>Compute Resource Strategy (Free → Low-cost → Credits)</summary>
+
+- [Compute Resource Strategy](#compute)
+
+</details>
+
+<details>
+<summary>Study Schedule, Success Strategies, and Milestones</summary>
+
 - [Study Schedule, Success Strategies, and Milestones](#schedule)
+
+</details>
+
+<details>
+<summary>Resources Summary</summary>
+
 - [Resources Summary](#resources)
+
+</details>
 
 ---
 
@@ -627,7 +650,7 @@ Success tips:
 
 ## Resources Summary
 
-Course documents:
+Reference Course Syllabus:
 - [ERA V4 Course Syllabus (PDF)](ERA+V4+Course+Syllabus.pdf)
 
 Primary platforms:
@@ -651,4 +674,4 @@ Reference implementations:
 
 This consolidated plan retains all core topics and resources from the three originals, with clear markings so you can tailor depth and compute to your context without losing information.
 
-# End of Hero Plan
+# End

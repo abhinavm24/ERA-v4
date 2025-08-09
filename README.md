@@ -5,7 +5,7 @@ A structured workspace for a 26-week self-study program inspired by ERA V4. This
 ## Course info
 
 - **Self-study plan (in repo)**: [docs/plan.md](docs/plan.md)
-- **Official ERA V4 course syllabus**: [ERA V4 Course Syllabus (PDF)](https://s3.us-east-1.amazonaws.com/theschoolof.ai/ERA+V4+Course+Syllabus.pdf)
+- **Official ERA V4 course syllabus**: [ERA V4 Course Syllabus (PDF)](docs/ERA+V4+Course+Syllabus.pdf)
 
 ## Quickstart (uv recommended)
 
@@ -28,8 +28,7 @@ jupyter lab
 ## Repo Layout
 
 - `docs/` – course plan and notes
-- `notebooks/` – weekly notebooks (start with `week01`)
- - `notebooks/` – weekly notebooks (start with `week00` for Mac MPS check, then `week01`)
+- `notebooks/` – weekly notebooks (start with `week00`)
 - `src/` – reusable Python modules/utilities
 - `requirements/` – segmented dependencies
 - `scripts/` – helper CLI utilities (add as needed)
