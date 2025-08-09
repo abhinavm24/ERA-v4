@@ -4,7 +4,7 @@ A structured workspace for a 26-week self-study program inspired by ERA V4. This
 
 ## Course info
 
-- **Self-study plan (in repo)**: see `docs/plan.md`
+- **Self-study plan (in repo)**: [docs/plan.md](docs/plan.md)
 - **Official ERA V4 course syllabus**: [ERA V4 Course Syllabus (PDF)](https://s3.us-east-1.amazonaws.com/theschoolof.ai/ERA+V4+Course+Syllabus.pdf)
 
 ## Quickstart (uv recommended)
