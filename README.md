@@ -14,7 +14,7 @@ Install `uv` (one-time):
 - Shell script: `curl -LsSf https://astral.sh/uv/install.sh | sh`
 - Ensure `uv` is on PATH (if needed): `export PATH="$HOME/.local/bin:$PATH"`
 
-Setup and run:
+Setup and run (dev):
 ```bash
 uv venv .venv
 source .venv/bin/activate
@@ -25,6 +25,11 @@ python -m ipykernel install --user --name era-v4 --display-name "Python (era-v4)
 jupyter lab
 ```
 
+Run tests and checks:
+```bash
+make fmt lint mypy nbqa test
+```
+
 ## Repo Layout
 
 - `docs/` – course plan and notes
@@ -33,6 +38,14 @@ jupyter lab
 - `requirements/` – segmented dependencies
 - `scripts/` – helper CLI utilities (add as needed)
 - `data/`, `models/`, `outputs/`, `logs/` – gitignored artifacts
+
+## License
+
+This project is licensed under the GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later). See `LICENSE` for details. Derivative works and networked use must be released under the same license.
+
+## CI
+
+This repo includes a basic GitHub Actions workflow in `.github/workflows/ci.yml` that runs pre-commit and pytest on pushes and PRs.
 
 ## Notes on PyTorch
 

@@ -3,7 +3,7 @@
 # AI Study Plan
 
 Consolidates three study plans:
-`docs/plan basic.md` (20-week free-first), `docs/plan-opus4.1.md` (26-week comprehensive), and `docs/plan-sonnet4.md` (24-week advanced/production).
+[`docs/plan basic.md`](plan-basic.md), [`docs/plan-opus4.1.md`](plan-opus4.1.md) (comprehensive), and [`docs/plan-sonnet4.md`](plan-sonnet4.md) (advanced/production).
 
 It preserves all topics and resources. When content becomes too dense or duplicative, it is marked as Optional so nothing is lost.
 

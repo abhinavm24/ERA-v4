@@ -1,6 +1,6 @@
-"""Utility helpers for ERA-v4 projects.
-
-Add shared utilities here as the codebase grows (e.g., data loading, metrics, visualization).
 """
+Reusable utilities for `era_v4`.
 
-
+Add shared helpers here as the codebase grows (e.g., data loading, metrics,
+visualization). Keep modules small and focused.
+"""

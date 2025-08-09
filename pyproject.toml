@@ -1,3 +1,21 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "era-v4"
+version = "0.2.0"
+description = "ERA V4 study repository with notebooks and reusable utilities"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "ERA V4" }]
+license = { text = "AGPL-3.0-or-later" }
+keywords = ["deep-learning", "pytorch", "notebooks", "education"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["era_v4*"]
+
 [tool.black]
 line-length = 100
 target-version = ["py313", "py312"]
@@ -29,3 +47,8 @@ warn_redundant_casts = true
 warn_unused_configs = true
 disallow_untyped_defs = false
 ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-q"
+testpaths = ["tests"]

@@ -3,5 +3,3 @@ gymnasium
 stable-baselines3
 pygame
 pybullet
-
-

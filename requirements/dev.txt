@@ -7,4 +7,9 @@ jupyterlab
 nbqa
 ipywidgets
 
+# Testing
+pytest
+pytest-cov
 
+# Notebook utilities
+nbstripout

@@ -8,5 +8,3 @@ ipykernel
 tqdm
 pillow
 scikit-learn
-
-
