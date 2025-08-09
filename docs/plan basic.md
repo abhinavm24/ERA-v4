@@ -1,3 +1,5 @@
+<a id="top"></a>
+
 # Free ERA V4 Alternative Study Plan
 
 ## Contents
@@ -11,10 +13,12 @@
 - [Phase 6: Capstone and Advanced Implementation (Weeks 19-20)](#phase-6-capstone-and-advanced-implementation-weeks-19-20)
 - [Free Compute Resource Strategy](#free-compute-resource-strategy)
 - [Study Schedule and Time Management](#study-schedule-and-time-management)
+- [Back to top](#top)
 
 The ERA V4 course from The School of AI represents one of the most ambitious educational programs in deep learning, uniquely training students to build 70B parameter models from scratch. This comprehensive 20-week study plan provides free alternatives that match ERA V4's progression and hands-on philosophy, focusing on **real implementation over theory** and **production-scale techniques**.
 
 ## Course Overview and Philosophy
+[Back to top](#top)
 
 ERA V4's revolutionary approach combines foundational learning with unprecedented scale - full ImageNet training, complete quantization-aware training (not shortcuts like LoRA), and end-to-end 70B model pretraining. This study plan maintains that ambitious scope using carefully selected free resources, efficient training techniques, and creative compute solutions.
 
@@ -23,6 +27,7 @@ ERA V4's revolutionary approach combines foundational learning with unprecedente
 **Expected Outcome**: Production-level AI engineering skills typically found only in advanced research labs
 
 ## Phase 1: Foundations and Neural Networks (Weeks 1-6)
+[Back to top](#top)
 
 ### Week 1: Introduction to AI, Neural Networks and Development Tools
 **Learning Objectives**: Build foundational understanding and set up complete development environment
@@ -69,7 +74,7 @@ ERA V4's revolutionary approach combines foundational learning with unprecedente
 - Train first model on cloud (Google Colab)
 - Build custom dataset and dataloader from scratch
 
-**Time Commitment**: 18-22 hours  
+**Time Commitment**: 18-22 hours
 **Compute Requirements**: Start using free GPU tiers regularly
 
 ### Week 4: Building First Neural Network and Training on Cloud
@@ -121,6 +126,7 @@ ERA V4's revolutionary approach combines foundational learning with unprecedente
 **Compute Requirements**: Consistent GPU access needed, consider upgrading to paid tiers
 
 ## Phase 2: Advanced Vision and Training (Weeks 7-9)
+[Back to top](#top)
 
 ### Week 7: Advanced CNN Architectures and Training
 **Learning Objectives**: Master modern CNN architectures and training techniques
@@ -170,12 +176,13 @@ ERA V4's revolutionary approach combines foundational learning with unprecedente
 **Time Commitment**: 25-30 hours (includes long training runs)
 **Compute Requirements**: **Critical Week** - requires substantial GPU resources or creative solutions using free tiers
 
-**Note**: This week requires the most compute resources. Free alternatives: 
-- Use ImageNet subset (10% of data) 
+**Note**: This week requires the most compute resources. Free alternatives:
+- Use ImageNet subset (10% of data)
 - Multiple Colab sessions with checkpointing
 - Apply for AWS/GCP research credits before this week
 
 ## Phase 3: Transformers and LLM Foundations (Weeks 10-13)
+[Back to top](#top)
 
 ### Week 10: Introduction to Transformers and Emergent Abilities in LLMs
 **Learning Objectives**: Deep understanding of transformer architecture and attention mechanisms
@@ -197,7 +204,7 @@ ERA V4's revolutionary approach combines foundational learning with unprecedente
 **Learning Objectives**: Master text preprocessing and efficient data representation
 
 **Primary Resources**:
-- **Andrej Karpathy's Tokenizer Video** (2.5 hours): Build BPE tokenizer from scratch  
+- **Andrej Karpathy's Tokenizer Video** (2.5 hours): Build BPE tokenizer from scratch
 - **Hugging Face Tokenizers Documentation** (4 hours): Production tokenizer training
 - **Word2Vec and Modern Embeddings Tutorial** (3 hours)
 
@@ -242,6 +249,7 @@ ERA V4's revolutionary approach combines foundational learning with unprecedente
 **Compute Requirements**: Extended evaluation runs, consider batch processing
 
 ## Phase 4: Advanced LLM Techniques (Weeks 14-15)
+[Back to top](#top)
 
 ### Week 14: Full Quantization-Aware Training (Real QAT, not LoRA shortcuts)
 **Learning Objectives**: Production-grade model compression and deployment optimization
@@ -278,6 +286,7 @@ ERA V4's revolutionary approach combines foundational learning with unprecedente
 **Compute Requirements**: Multi-modal training requires substantial GPU resources
 
 ## Phase 5: Reinforcement Learning (Weeks 16-18)
+[Back to top](#top)
 
 ### Week 16: Reinforcement Learning 101
 **Learning Objectives**: RL fundamentals and basic algorithm implementation
@@ -321,13 +330,14 @@ ERA V4's revolutionary approach combines foundational learning with unprecedente
 
 **Hands-on Exercises**:
 - **Major Project**: Implement complete RLHF pipeline on small language model
-- Train reward model from human preference data  
+- Train reward model from human preference data
 - Apply PPO for language model fine-tuning
 
 **Time Commitment**: 26-30 hours
 **Compute Requirements**: Substantial resources for LLM + RL training combined
 
 ## Phase 6: Capstone and Advanced Implementation (Weeks 19-20)
+[Back to top](#top)
 
 ### Week 19: Pretraining a 70B LLM End-to-End + Instruction Tuning
 **Learning Objectives**: ERA V4's flagship achievement - training production-scale language models
@@ -335,7 +345,7 @@ ERA V4's revolutionary approach combines foundational learning with unprecedente
 **Primary Resources**:
 - **Alternative Approach**: Use efficient training methods since 70B training requires massive resources
 - **NVIDIA Minitron Distillation** (4 hours): Efficient large model training
-- **QLoRA Implementation** (6 hours): Memory-efficient fine-tuning 
+- **QLoRA Implementation** (6 hours): Memory-efficient fine-tuning
 - **Model Parallelism Papers** (research study): Understanding large model training
 
 **Hands-on Exercises**:
@@ -370,6 +380,7 @@ ERA V4's revolutionary approach combines foundational learning with unprecedente
 **Compute Requirements**: Focus on optimization and deployment rather than training
 
 ## Free Compute Resource Strategy
+[Back to top](#top)
 
 ### Tier 1: Free Resources (Start Here)
 - **Google Colab Free**: 12-hour sessions, shared GPUs (K80/T4/P100)
@@ -383,7 +394,7 @@ ERA V4's revolutionary approach combines foundational learning with unprecedente
 
 ### Tier 3: Academic Credits (Apply Early!)
 - **AWS Research Credits**: Up to $5,000 for students
-- **Google Cloud Research**: Up to $1,000/year PhD, $5,000 faculty  
+- **Google Cloud Research**: Up to $1,000/year PhD, $5,000 faculty
 - **Azure for Students**: $100 free credits
 
 ### Creative Solutions for Resource-Intensive Weeks
@@ -398,10 +409,11 @@ ERA V4's revolutionary approach combines foundational learning with unprecedente
 - Demonstrate understanding through smaller-scale implementation
 
 ## Study Schedule and Time Management
+[Back to top](#top)
 
 ### Weekly Structure (20 hours average)
 - **Theory and Research** (5 hours): Video lectures, paper reading
-- **Hands-on Implementation** (10 hours): Coding, experimentation  
+- **Hands-on Implementation** (10 hours): Coding, experimentation
 - **Community Engagement** (2 hours): Discord discussions, forums
 - **Documentation and Reflection** (3 hours): GitHub updates, learning notes
 

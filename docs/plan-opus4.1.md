@@ -1,3 +1,5 @@
+<a id="top"></a>
+
 # Comprehensive ERA V4-Inspired AI Self-Study Plan
 
 ## Contents
@@ -6,24 +8,26 @@
 - [PHASE 2: TRANSFORMERS & LARGE LANGUAGE MODELS](#phase-2-transformers--large-language-models)
 - [PHASE 3: ADVANCED AI APPLICATIONS](#phase-3-advanced-ai-applications)
 - [PHASE 4: CAPSTONE PROJECT](#phase-4-capstone-project)
+- [Back to top](#top)
 
 ## Course Overview
 
 This 26-week intensive self-study program mirrors the progression and depth of The School of AI's ERA V4 course, using entirely free resources. The plan progresses from neural network fundamentals to training 70B+ parameter models, emphasizing hands-on implementation and real-world deployment skills.
 
-**Prerequisites:** Basic Python programming, high school mathematics  
-**Duration:** 26 weeks (6 months intensive)  
-**Study Time:** 15-25 hours per week  
+**Prerequisites:** Basic Python programming, high school mathematics
+**Duration:** 26 weeks (6 months intensive)
+**Study Time:** 15-25 hours per week
 **Hardware Requirements:** Access to Google Colab (free GPU/TPU) or cloud computing credits
 
 ---
 
 ## PHASE 1: FOUNDATIONS & COMPUTER VISION
+[Back to top](#top)
 *Weeks 1-12: Building Deep Learning Fundamentals*
 
 ### Week 1: AI Foundations & Neural Networks
-**Difficulty:** Beginner  
-**Study Time:** 15 hours  
+**Difficulty:** Beginner
+**Study Time:** 15 hours
 
 **Learning Objectives:**
 - Understand neural network fundamentals and backpropagation
@@ -49,7 +53,7 @@ This 26-week intensive self-study program mirrors the progression and depth of T
 - Ian Goodfellow's "Deep Learning" Chapter 1-2 (mathematical foundations)
 
 ### Week 2: Python Mastery & Development Tools
-**Difficulty:** Beginner-Intermediate  
+**Difficulty:** Beginner-Intermediate
 **Study Time:** 12 hours
 
 **Learning Objectives:**
@@ -73,7 +77,7 @@ This 26-week intensive self-study program mirrors the progression and depth of T
 - Practice Git workflow: branching, merging, pull requests
 
 ### Week 3: PyTorch Deep Dive & Cloud Computing
-**Difficulty:** Intermediate  
+**Difficulty:** Intermediate
 **Study Time:** 18 hours
 
 **Learning Objectives:**
@@ -98,7 +102,7 @@ This 26-week intensive self-study program mirrors the progression and depth of T
 - **Project:** Deploy trained model as web service using Streamlit
 
 ### Week 4: First Neural Network & Cloud Training
-**Difficulty:** Intermediate  
+**Difficulty:** Intermediate
 **Study Time:** 20 hours
 
 **Learning Objectives:**
@@ -122,7 +126,7 @@ This 26-week intensive self-study program mirrors the progression and depth of T
 - **Project:** Achieve >92% accuracy on CIFAR-10 and deploy to Hugging Face Spaces
 
 ### Week 5: CNNs & Backpropagation Deep Dive
-**Difficulty:** Intermediate  
+**Difficulty:** Intermediate
 **Study Time:** 20 hours
 
 **Learning Objectives:**
@@ -147,7 +151,7 @@ This 26-week intensive self-study program mirrors the progression and depth of T
 - **Project:** Create interactive CNN visualizer using Streamlit
 
 ### Week 6: Advanced CNN Architectures
-**Difficulty:** Intermediate-Advanced  
+**Difficulty:** Intermediate-Advanced
 **Study Time:** 22 hours
 
 **Learning Objectives:**
@@ -172,7 +176,7 @@ This 26-week intensive self-study program mirrors the progression and depth of T
 - **Project:** Build image classification API with multiple model options
 
 ### Week 7: Training Optimization & Regularization
-**Difficulty:** Advanced  
+**Difficulty:** Advanced
 **Study Time:** 20 hours
 
 **Learning Objectives:**
@@ -197,7 +201,7 @@ This 26-week intensive self-study program mirrors the progression and depth of T
 - **Project:** Create training optimization toolkit with automated hyperparameter search
 
 ### Week 8: One Cycle Policy & Advanced Training
-**Difficulty:** Advanced  
+**Difficulty:** Advanced
 **Study Time:** 18 hours
 
 **Learning Objectives:**
@@ -222,7 +226,7 @@ This 26-week intensive self-study program mirrors the progression and depth of T
 - **Project:** Train CIFAR-10 to 94% accuracy in under 100 epochs
 
 ### Week 9: Multi-GPU ImageNet Training
-**Difficulty:** Advanced  
+**Difficulty:** Advanced
 **Study Time:** 25 hours
 
 **Learning Objectives:**
@@ -247,7 +251,7 @@ This 26-week intensive self-study program mirrors the progression and depth of T
 - **Project:** Achieve ImageNet baseline accuracy and document training process
 
 ### Week 10: Computer Vision Applications
-**Difficulty:** Intermediate-Advanced  
+**Difficulty:** Intermediate-Advanced
 **Study Time:** 20 hours
 
 **Learning Objectives:**
@@ -272,7 +276,7 @@ This 26-week intensive self-study program mirrors the progression and depth of T
 - **Project:** Deploy object detection system as mobile-friendly web app
 
 ### Week 11: Generative Models Introduction
-**Difficulty:** Advanced  
+**Difficulty:** Advanced
 **Study Time:** 22 hours
 
 **Learning Objectives:**
@@ -297,7 +301,7 @@ This 26-week intensive self-study program mirrors the progression and depth of T
 - **Project:** Build interactive generative art application
 
 ### Week 12: Computer Vision Capstone
-**Difficulty:** Advanced  
+**Difficulty:** Advanced
 **Study Time:** 25 hours
 
 **Learning Objectives:**
@@ -330,10 +334,11 @@ This 26-week intensive self-study program mirrors the progression and depth of T
 ---
 
 ## PHASE 2: TRANSFORMERS & LARGE LANGUAGE MODELS
+[Back to top](#top)
 *Weeks 13-18: Modern NLP and Transformer Architectures*
 
 ### Week 13: Transformer Architecture Deep Dive
-**Difficulty:** Advanced  
+**Difficulty:** Advanced
 **Study Time:** 25 hours
 
 **Learning Objectives:**
@@ -359,7 +364,7 @@ This 26-week intensive self-study program mirrors the progression and depth of T
 - **Project:** Deploy translation model with interactive web interface
 
 ### Week 14: Embeddings & Tokenization
-**Difficulty:** Intermediate-Advanced  
+**Difficulty:** Intermediate-Advanced
 **Study Time:** 20 hours
 
 **Learning Objectives:**
@@ -384,7 +389,7 @@ This 26-week intensive self-study program mirrors the progression and depth of T
 - **Project:** Multilingual document similarity search engine
 
 ### Week 15: Large Language Model Training
-**Difficulty:** Advanced  
+**Difficulty:** Advanced
 **Study Time:** 28 hours
 
 **Learning Objectives:**
@@ -410,7 +415,7 @@ This 26-week intensive self-study program mirrors the progression and depth of T
 - **Project:** Train domain-specific language model (code, literature, or science)
 
 ### Week 16: LLM Optimization & Evaluation
-**Difficulty:** Advanced  
+**Difficulty:** Advanced
 **Study Time:** 25 hours
 
 **Learning Objectives:**
@@ -436,7 +441,7 @@ This 26-week intensive self-study program mirrors the progression and depth of T
 - **Project:** Optimize training pipeline for maximum efficiency and create evaluation dashboard
 
 ### Week 17: Fine-tuning & Instruction Following
-**Difficulty:** Advanced  
+**Difficulty:** Advanced
 **Study Time:** 24 hours
 
 **Learning Objectives:**
@@ -462,7 +467,7 @@ This 26-week intensive self-study program mirrors the progression and depth of T
 - **Project:** Create specialized assistant (coding, writing, or domain expert) with custom fine-tuning
 
 ### Week 18: Quantization & Model Compression
-**Difficulty:** Advanced  
+**Difficulty:** Advanced
 **Study Time:** 22 hours
 
 **Learning Objectives:**
@@ -490,10 +495,11 @@ This 26-week intensive self-study program mirrors the progression and depth of T
 ---
 
 ## PHASE 3: ADVANCED AI APPLICATIONS
+[Back to top](#top)
 *Weeks 19-24: Multimodal AI, RL, and Production Systems*
 
 ### Week 19: Vision-Language Models
-**Difficulty:** Advanced  
+**Difficulty:** Advanced
 **Study Time:** 26 hours
 
 **Learning Objectives:**
@@ -519,7 +525,7 @@ This 26-week intensive self-study program mirrors the progression and depth of T
 - **Project:** Multimodal search engine with text and image queries
 
 ### Week 20: Reinforcement Learning Fundamentals
-**Difficulty:** Intermediate-Advanced  
+**Difficulty:** Intermediate-Advanced
 **Study Time:** 24 hours
 
 **Learning Objectives:**
@@ -545,7 +551,7 @@ This 26-week intensive self-study program mirrors the progression and depth of T
 - **Project:** Multi-agent RL system (trading, game-playing, or robotics simulation)
 
 ### Week 21: Advanced Reinforcement Learning
-**Difficulty:** Advanced  
+**Difficulty:** Advanced
 **Study Time:** 25 hours
 
 **Learning Objectives:**
@@ -571,7 +577,7 @@ This 26-week intensive self-study program mirrors the progression and depth of T
 - **Project:** Autonomous driving or robot navigation using deep RL
 
 ### Week 22: RLHF & AI Alignment
-**Difficulty:** Advanced  
+**Difficulty:** Advanced
 **Study Time:** 23 hours
 
 **Learning Objectives:**
@@ -597,7 +603,7 @@ This 26-week intensive self-study program mirrors the progression and depth of T
 - **Project:** Safe AI assistant with constitutional training and red teaming evaluation
 
 ### Week 23: Large-Scale Model Training
-**Difficulty:** Advanced  
+**Difficulty:** Advanced
 **Study Time:** 30 hours
 
 **Learning Objectives:**
@@ -623,7 +629,7 @@ This 26-week intensive self-study program mirrors the progression and depth of T
 - **Project:** End-to-end large model training pipeline with infrastructure automation
 
 ### Week 24: Production AI Systems
-**Difficulty:** Advanced  
+**Difficulty:** Advanced
 **Study Time:** 25 hours
 
 **Learning Objectives:**
@@ -651,10 +657,11 @@ This 26-week intensive self-study program mirrors the progression and depth of T
 ---
 
 ## PHASE 4: CAPSTONE PROJECT
+[Back to top](#top)
 *Weeks 25-26: Integration and Portfolio Development*
 
 ### Week 25-26: Comprehensive Capstone
-**Difficulty:** Expert Level  
+**Difficulty:** Expert Level
 **Study Time:** 40+ hours
 
 **Learning Objectives:**
@@ -726,6 +733,7 @@ Create comprehensive content generation system:
 ---
 
 ## **RESOURCES SUMMARY**
+[Back to top](#top)
 
 ### **Primary Learning Platforms**
 - **Fast.ai Course**: Practical deep learning methodology

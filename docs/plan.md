@@ -1,759 +1,530 @@
-# Comprehensive ERA V4-Inspired AI Self-Study Plan
+
+
+# ERA V4 Hero Study Plan (Consolidated)
+
+Consolidates three study plans:
+`docs/plan basic.md` (20-week free-first), `docs/plan-opus4.1.md` (26-week comprehensive), and `docs/plan-sonnet4.md` (24-week advanced/production).
+
+It preserves all topics and resources. When content becomes too dense or duplicative, it is marked as Optional so nothing is lost.
+
+## How to use this plan
+
+- Icons used throughout:
+   - 🔹 Core: recommended for everyone; forms the main track
+   - 🧩 Optional: valuable but not required; pick based on time/interest
+   - 🚀 Advanced: assumes strong background and/or higher compute
+   - 💸 Budget: guidance and fallbacks to run on free/low-cost tiers
+   - 🔹 🚀 Core + Advanced: combined items spanning both levels
+
+## Overview
+
+- Prerequisites: Basic Python, high school math; 🚀 items assume solid PyTorch, CUDA/DDP, and some production experience
+- Duration: 26 weeks (approx. 6 months) with 🧩/🚀 modules you can include or skip
+- Study time: 15–25 hours/week (peak weeks up to 30+)
+- Compute posture: Free-first; scale up only when needed. A full compute strategy and budget fallbacks are provided at the end and referenced inline as 💸.
 
 ## Contents
-
-- [PHASE 1: FOUNDATIONS & COMPUTER VISION](#phase-1-foundations--computer-vision)
-- [PHASE 2: TRANSFORMERS & LARGE LANGUAGE MODELS](#phase-2-transformers--large-language-models)
-- [PHASE 3: ADVANCED AI APPLICATIONS](#phase-3-advanced-ai-applications)
-- [PHASE 4: CAPSTONE PROJECT](#phase-4-capstone-project)
-
-## Course Overview
-
-This 26-week intensive self-study program mirrors the progression and depth of The School of AI's ERA V4 course, using entirely free resources. The plan progresses from neural network fundamentals to training 70B+ parameter models, emphasizing hands-on implementation and real-world deployment skills.
-
-**Prerequisites:** Basic Python programming, high school mathematics  
-**Duration:** 26 weeks (6 months intensive)  
-**Study Time:** 15-25 hours per week  
-**Hardware Requirements:** Access to Google Colab (free GPU/TPU) or cloud computing credits
+<a id="top"></a>
+- [Phase 1: Foundations & Computer Vision (Weeks 1–12)](#phase-1)
+- [Phase 2: Transformers & Large Language Models (Weeks 13–18)](#phase-2)
+- [Phase 3: Advanced Applications (Weeks 19–22)](#phase-3)
+- [Phase 4: Large-Scale Training & Production (Weeks 23–24)](#phase-4)
+- [Phase 5: Capstone & Portfolio (Weeks 25–26)](#phase-5)
+- [Compute Resource Strategy (Free → Low-cost → Credits)](#compute)
+- [Study Schedule, Success Strategies, and Milestones](#schedule)
+- [Resources Summary](#resources)
 
 ---
 
-## PHASE 1: FOUNDATIONS & COMPUTER VISION
-*Weeks 1-12: Building Deep Learning Fundamentals*
+<a id="phase-1"></a>
 
-### Week 1: AI Foundations & Neural Networks
-**Difficulty:** Beginner  
-**Study Time:** 15 hours  
+## Phase 1: Foundations & Computer Vision (Weeks 1–12)
 
-**Learning Objectives:**
-- Understand neural network fundamentals and backpropagation
-- Set up development environment (Python, PyTorch, Git)
-- Implement first neural network from scratch
+### Week 1: AI Foundations & Neural Networks 🔹
+**Study Time:** ~15–18h
+**Objectives:** neural net intuition, dev environment, first MLP
 
-**Theory Resources:**
-- [3Blue1Brown Neural Networks Series](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) - Visual neural network explanations (4 hours)
-- [Fast.ai Lesson 1](https://course.fast.ai/Lessons/lesson1.html) - Practical deep learning introduction (2 hours)
-- [MIT 6.034 Neural Networks Lecture](https://ocw.mit.edu/courses/6-034-artificial-intelligence-fall-2010/video_galleries/lecture-videos/) - Theoretical foundations (2 hours)
+Theory:
+- 🔹 3Blue1Brown Neural Networks (visual intuition) — 4h: `https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi`
+- 🧩 Fast.ai Lesson 1 (practical intro) — 2h: `https://course.fast.ai/Lessons/lesson1.html`
+- 🧩 MIT 6.034 Neural Networks (theory) — 2h: `https://ocw.mit.edu/courses/6-034-artificial-intelligence-fall-2010/video_galleries/lecture-videos/`
 
-**Practical Resources:**
-- [Google Colab Neural Network from Scratch](https://colab.research.google.com/github/lexfridman/mit-deep-learning/blob/master/tutorial_deep_learning_basics/deep_learning_basics.ipynb) - Implementation tutorial
-- [PyTorch 60 Minute Blitz](https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html) - Framework introduction
+Practical:
+- 🔹 PyTorch 60-min Blitz: `https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html`
+- 🔹 Implement perceptron and MLP (NumPy) for XOR
+- 🧩 Gradio/Streamlit quick UI: `https://www.gradio.app/` | `https://streamlit.io/`
 
-**Hands-on Assignment:**
-- Implement multi-layer perceptron from scratch using NumPy for XOR problem
-- Build same network using PyTorch and compare performance
-- Deploy simple neural network using Gradio interface
-- **Code Repository:** Create personal GitHub repo for all implementations
+Deliverables:
+- NumPy MLP + PyTorch re-implementation, repo initialized with README
 
-**Optional Advanced Materials:**
-- Ian Goodfellow's "Deep Learning" Chapter 1-2 (mathematical foundations)
-
-### Week 2: Python Mastery & Development Tools
-**Difficulty:** Beginner-Intermediate  
-**Study Time:** 12 hours
-
-**Learning Objectives:**
-- Master Python for ML (NumPy, Matplotlib, advanced concepts)
-- Learn Git version control and collaborative development
-- Set up professional ML development environment
-
-**Theory Resources:**
-- [Real Python Advanced Python Features](https://realpython.com/learning-paths/python-fundamentals/) - Object-oriented programming, decorators, generators (4 hours)
-- [Git and GitHub Tutorial](https://www.youtube.com/watch?v=RGOj5yH7evk) - Version control fundamentals (2 hours)
-
-**Practical Resources:**
-- [NumPy Tutorial for Machine Learning](https://numpy.org/learn/) - Array operations and vectorization
-- [Matplotlib Gallery](https://matplotlib.org/stable/gallery/index.html) - Data visualization techniques
-- [VS Code for Data Science Setup](https://code.visualstudio.com/docs/datascience/jupyter-notebooks) - IDE configuration
-
-**Hands-on Assignment:**
-- Create comprehensive data analysis pipeline using NumPy and Matplotlib
-- Implement vector operations for neural network computations
-- Set up GitHub repository with proper documentation and code organization
-- Practice Git workflow: branching, merging, pull requests
-
-### Week 3: PyTorch Deep Dive & Cloud Computing
-**Difficulty:** Intermediate  
-**Study Time:** 18 hours
-
-**Learning Objectives:**
-- Master PyTorch tensor operations and automatic differentiation
-- Set up and use cloud computing for ML (Google Colab, Kaggle)
-- Understand GPU acceleration and memory management
-
-**Theory Resources:**
-- [PyTorch Tutorials Official](https://pytorch.org/tutorials/) - Complete PyTorch fundamentals (6 hours)
-- [Google Colab Guide](https://colab.research.google.com/notebooks/intro.ipynb) - Cloud computing setup (2 hours)
-- [Understanding GPU Computing for ML](https://course.fast.ai/Lessons/lesson8.html) - Hardware acceleration concepts
-
-**Practical Resources:**
-- [PyTorch Examples Repository](https://github.com/pytorch/examples) - Official implementations
-- [Google Colab Pro Features](https://research.google.com/colaboratory/faq.html) - Advanced cloud features
-
-**Hands-on Assignment:**
-- Implement gradient descent optimization from scratch using PyTorch
-- Create custom Dataset and DataLoader for image classification
-- Compare training times on CPU vs GPU using Google Colab
-- Build and train basic CNN on CIFAR-10 dataset
-- **Project:** Deploy trained model as web service using Streamlit
-
-### Week 4: First Neural Network & Cloud Training
-**Difficulty:** Intermediate  
-**Study Time:** 20 hours
-
-**Learning Objectives:**
-- Train production-scale neural networks on cloud platforms
-- Implement proper training loops with validation and testing
-- Master data preprocessing and augmentation techniques
-
-**Theory Resources:**
-- [Deep Learning Specialization Course 2](https://www.coursera.org/learn/deep-neural-network) - Optimization and hyperparameter tuning (audit for free)
-- [Fast.ai Lesson 2-3](https://course.fast.ai/) - Training methodology and data augmentation
-
-**Practical Resources:**
-- [PyTorch Training Loop Tutorial](https://pytorch.org/tutorials/beginner/introyt/trainingyt.html) - Professional training practices
-- [Albumentations Documentation](https://albumentations.ai/) - Advanced data augmentation
-
-**Hands-on Assignment:**
-- Implement complete training pipeline with train/validation/test splits
-- Train ResNet-18 on CIFAR-10 with data augmentation
-- Implement learning rate scheduling and early stopping
-- Create comprehensive training visualizations and metrics logging
-- **Project:** Achieve >92% accuracy on CIFAR-10 and deploy to Hugging Face Spaces
-
-### Week 5: CNNs & Backpropagation Deep Dive
-**Difficulty:** Intermediate  
-**Study Time:** 20 hours
-
-**Learning Objectives:**
-- Understand CNN architecture design principles
-- Master backpropagation mathematics and implementation
-- Implement convolutional layers from scratch
-
-**Theory Resources:**
-- [Stanford CS231n CNN Lectures](http://cs231n.stanford.edu/schedule.html) - Lectures 5-7 on CNNs and backpropagation (6 hours)
-- [Convolution Arithmetic Guide](https://github.com/vdumoulin/conv_arithmetic) - Visual convolution explanations
-- [Backpropagation Calculus](https://www.youtube.com/watch?v=Ilg3gGewQ5U) - Mathematical foundations by 3Blue1Brown
-
-**Practical Resources:**
-- [CNN Implementation from Scratch](https://github.com/pytorch/tutorials/blob/main/beginner_source/nn_tutorial.py) - PyTorch tutorial
-- [CS231n Assignment Solutions](https://github.com/amanchadha/coursera-deep-learning-specialization) - Complete implementations
-
-**Hands-on Assignment:**
-- Implement convolutional layer with forward and backward pass from scratch
-- Build CNN architecture with different layer types (conv, pooling, batch norm)
-- Visualize feature maps and learned filters
-- Compare custom implementation with PyTorch's built-in layers
-- **Project:** Create interactive CNN visualizer using Streamlit
-
-### Week 6: Advanced CNN Architectures
-**Difficulty:** Intermediate-Advanced  
-**Study Time:** 22 hours
-
-**Learning Objectives:**
-- Implement state-of-the-art CNN architectures (ResNet, DenseNet, EfficientNet)
-- Understand architectural innovations and design patterns
-- Master transfer learning and fine-tuning techniques
-
-**Theory Resources:**
-- [ResNet Paper](https://arxiv.org/abs/1512.03385) - Original residual networks paper
-- [EfficientNet Paper](https://arxiv.org/abs/1905.11946) - Compound scaling methodology
-- [Papers with Code CNN Architectures](https://paperswithcode.com/methods/category/convolutional-neural-networks) - Architecture comparisons
-
-**Practical Resources:**
-- [Timm Models Library](https://github.com/rwightman/pytorch-image-models) - Pre-trained CNN implementations
-- [Transfer Learning Tutorial](https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html) - Fine-tuning practices
-
-**Hands-on Assignment:**
-- Implement ResNet from scratch with skip connections
-- Compare ResNet, DenseNet, and EfficientNet on ImageNet subset
-- Fine-tune pre-trained models on custom dataset
-- Create model comparison framework with performance metrics
-- **Project:** Build image classification API with multiple model options
-
-### Week 7: Training Optimization & Regularization
-**Difficulty:** Advanced  
-**Study Time:** 20 hours
-
-**Learning Objectives:**
-- Master advanced optimization techniques (Adam, RMSprop, learning rate scheduling)
-- Implement regularization methods (dropout, batch normalization, weight decay)
-- Understand training dynamics and convergence analysis
-
-**Theory Resources:**
-- [Deep Learning Book Chapter 8](https://www.deeplearningbook.org/contents/optimization.html) - Optimization for machine learning
-- [Batch Normalization Paper](https://arxiv.org/abs/1502.03167) - Understanding batch normalization
-- [Adam Optimizer Paper](https://arxiv.org/abs/1412.6980) - Adaptive moment estimation
-
-**Practical Resources:**
-- [PyTorch Optimizers Documentation](https://pytorch.org/docs/stable/optim.html) - Optimizer implementations
-- [Learning Rate Finder](https://github.com/davidtvs/pytorch-lr-finder) - Optimal learning rate discovery
-
-**Hands-on Assignment:**
-- Implement different optimizers from scratch and compare convergence
-- Create learning rate scheduling experiments
-- Study effect of batch normalization on training dynamics
-- Build comprehensive training monitoring dashboard
-- **Project:** Create training optimization toolkit with automated hyperparameter search
-
-### Week 8: One Cycle Policy & Advanced Training
-**Difficulty:** Advanced  
-**Study Time:** 18 hours
-
-**Learning Objectives:**
-- Implement One Cycle Learning Rate Policy for faster convergence
-- Master gradient clipping and numerical stability techniques
-- Understand training at scale considerations
-
-**Theory Resources:**
-- [Cyclical Learning Rates Paper](https://arxiv.org/abs/1506.01186) - Cyclic learning rate methodology
-- [One Cycle Policy](https://arxiv.org/abs/1708.07120) - Super-convergence techniques
-- [Fast.ai One Cycle](https://www.fast.ai/posts/2018-07-02-adam-weight-decay.html) - Practical implementation guide
-
-**Practical Resources:**
-- [PyTorch One Cycle Scheduler](https://pytorch.org/docs/stable/generated/torch.optim.lr_scheduler.OneCycleLR.html) - Official implementation
-- [Weights & Biases Tutorial](https://wandb.ai/site/articles/introduction-to-pytorch-lr-scheduler) - Learning rate visualization
-
-**Hands-on Assignment:**
-- Implement One Cycle Policy from scratch
-- Compare training times: standard vs. one cycle learning
-- Create learning rate range test implementation
-- Build automated hyperparameter optimization pipeline
-- **Project:** Train CIFAR-10 to 94% accuracy in under 100 epochs
-
-### Week 9: Multi-GPU ImageNet Training
-**Difficulty:** Advanced  
-**Study Time:** 25 hours
-
-**Learning Objectives:**
-- Set up distributed training across multiple GPUs
-- Train ResNet on full ImageNet dataset from scratch
-- Master data loading optimization and memory management
-
-**Theory Resources:**
-- [PyTorch Distributed Training](https://pytorch.org/tutorials/intermediate/ddp_tutorial.html) - Multi-GPU training setup
-- [ImageNet Training Best Practices](https://arxiv.org/abs/1812.01187) - Scaling to large datasets
-- [Mixed Precision Training](https://arxiv.org/abs/1710.03740) - Memory and speed optimization
-
-**Practical Resources:**
-- [ImageNet Training Example](https://github.com/pytorch/examples/tree/main/imagenet) - Complete training script
-- [Fast.ai ImageNet Training](https://github.com/fastai/imagenette) - Optimized training pipeline
-
-**Hands-on Assignment:**
-- Set up multi-GPU training environment (use Google Colab Pro or Kaggle)
-- Implement data loading optimizations for ImageNet
-- Train ResNet-50 on ImageNet subset with proper validation
-- Compare single vs. multi-GPU training performance
-- **Project:** Achieve ImageNet baseline accuracy and document training process
-
-### Week 10: Computer Vision Applications
-**Difficulty:** Intermediate-Advanced  
-**Study Time:** 20 hours
-
-**Learning Objectives:**
-- Build object detection systems (YOLO, R-CNN family)
-- Implement image segmentation models
-- Create end-to-end computer vision applications
-
-**Theory Resources:**
-- [YOLO Paper](https://arxiv.org/abs/1506.02640) - Real-time object detection
-- [Detectron2 Documentation](https://detectron2.readthedocs.io/) - Object detection framework
-- [U-Net Paper](https://arxiv.org/abs/1505.04597) - Semantic segmentation
-
-**Practical Resources:**
-- [YOLOv5 Repository](https://github.com/ultralytics/yolov5) - Production-ready object detection
-- [Detectron2 Tutorial](https://colab.research.google.com/drive/16jcaJoc6bCFAQ96jDe2HwtXj7BMD_-m5) - Custom object detection training
-
-**Hands-on Assignment:**
-- Train YOLO on custom object detection dataset
-- Implement semantic segmentation for medical images
-- Create real-time object detection demo using webcam
-- Build complete computer vision pipeline with preprocessing and postprocessing
-- **Project:** Deploy object detection system as mobile-friendly web app
-
-### Week 11: Generative Models Introduction
-**Difficulty:** Advanced  
-**Study Time:** 22 hours
-
-**Learning Objectives:**
-- Understand generative modeling principles
-- Implement Variational Autoencoders (VAEs)
-- Introduction to Generative Adversarial Networks (GANs)
-
-**Theory Resources:**
-- [VAE Paper](https://arxiv.org/abs/1312.6114) - Auto-encoding variational Bayes
-- [GAN Paper](https://arxiv.org/abs/1406.2661) - Generative adversarial networks
-- [Lil'Log Generative Models](https://lilianweng.github.io/posts/2018-10-13-flow-models/) - Comprehensive overview
-
-**Practical Resources:**
-- [VAE PyTorch Tutorial](https://github.com/pytorch/examples/tree/main/vae) - Official implementation
-- [GAN PyTorch Tutorial](https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html) - DCGAN implementation
-
-**Hands-on Assignment:**
-- Implement VAE for image generation on MNIST
-- Train DCGAN on CelebA face dataset
-- Create latent space interpolation visualizations
-- Compare different generative approaches
-- **Project:** Build interactive generative art application
-
-### Week 12: Computer Vision Capstone
-**Difficulty:** Advanced  
-**Study Time:** 25 hours
-
-**Learning Objectives:**
-- Integrate all computer vision techniques learned
-- Build production-ready computer vision system
-- Master deployment and scalability considerations
-
-**Hands-on Assignment:**
-- **Capstone Project Options:**
-  1. **Smart City Traffic Analysis**: Real-time vehicle detection, counting, and traffic flow analysis
-  2. **Medical Image Analysis System**: Disease detection from medical scans with explainable AI
-  3. **Agricultural Monitoring**: Crop health assessment using satellite/drone imagery
-  4. **Retail Analytics Platform**: Customer behavior analysis and product recognition
-
-**Project Requirements:**
-- Custom dataset creation and labeling
-- Multiple model comparison and ensemble methods
-- Real-time inference optimization
-- Web application with API endpoints
-- Comprehensive documentation and testing
-- Deployment to cloud platform (Heroku, AWS, or Google Cloud)
-
-**Evaluation Metrics:**
-- Model performance on test dataset
-- Inference speed and memory efficiency
-- Code quality and documentation
-- User interface and experience
-- Scalability demonstration
+💸: CPU ok; get Colab/Kaggle accounts set up.
 
 ---
 
-## PHASE 2: TRANSFORMERS & LARGE LANGUAGE MODELS
-*Weeks 13-18: Modern NLP and Transformer Architectures*
+### Week 2: Python Mastery & Dev Tools 🔹
+**Study Time:** ~12–20h
+**Objectives:** Python for ML, Git/GitHub, reproducible env
 
-### Week 13: Transformer Architecture Deep Dive
-**Difficulty:** Advanced  
-**Study Time:** 25 hours
+Theory/Practical:
+- 🔹 Real Python advanced features (OOP, decorators, generators): `https://realpython.com/learning-paths/python-fundamentals/`
+- 🔹 Git/GitHub tutorial: `https://www.youtube.com/watch?v=RGOj5yH7evk`
+- 🧩 Google ML Crash Course (Python sections): `https://developers.google.com/machine-learning/crash-course`
+- 🧩 Matplotlib gallery: `https://matplotlib.org/stable/gallery/index.html`
 
-**Learning Objectives:**
-- Understand attention mechanisms and self-attention
-- Implement Transformer architecture from scratch
-- Master positional encoding and multi-head attention
+Deliverables:
+- Data analysis pipeline (NumPy/Matplotlib), GitHub repo with branches/PRs, devcontainer/conda/venv
 
-**Theory Resources:**
-- [Attention Is All You Need Paper](https://arxiv.org/abs/1706.03762) - Original Transformer paper (3 hours)
-- [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) - Visual explanation (2 hours)
-- [3Blue1Brown Attention](https://www.youtube.com/watch?v=eMlx5fFNoYc) - Mathematical intuition (1 hour)
-- [Harvard NLP Annotated Transformer](http://nlp.seas.harvard.edu/annotated-transformer/) - Line-by-line implementation
-
-**Practical Resources:**
-- [Hugging Face Transformers Course](https://huggingface.co/learn/nlp-course/chapter1/1) - Comprehensive transformer tutorial
-- [PyTorch Transformer Tutorial](https://pytorch.org/tutorials/beginner/transformer_tutorial.html) - Official implementation
-
-**Hands-on Assignment:**
-- Implement multi-head attention mechanism from scratch
-- Build complete Transformer encoder-decoder architecture
-- Train Transformer on machine translation task (English-French)
-- Create attention visualization tools
-- **Project:** Deploy translation model with interactive web interface
-
-### Week 14: Embeddings & Tokenization
-**Difficulty:** Intermediate-Advanced  
-**Study Time:** 20 hours
-
-**Learning Objectives:**
-- Master different tokenization strategies (BPE, WordPiece, SentencePiece)
-- Understand contextual vs. static embeddings
-- Implement embedding techniques and similarity measures
-
-**Theory Resources:**
-- [Word2Vec Paper](https://arxiv.org/abs/1301.3781) - Efficient estimation of word representations
-- [BPE Paper](https://arxiv.org/abs/1508.07909) - Subword tokenization
-- [SentencePiece](https://arxiv.org/abs/1808.06226) - Unsupervised text tokenizer
-
-**Practical Resources:**
-- [Hugging Face Tokenizers Library](https://huggingface.co/docs/tokenizers/python/latest/) - Fast tokenization implementations
-- [Word Embeddings Tutorial](https://pytorch.org/tutorials/beginner/nlp/word_embeddings_tutorial.html) - PyTorch implementation
-
-**Hands-on Assignment:**
-- Train Word2Vec and FastText embeddings on large corpus
-- Implement different tokenization strategies and compare vocabulary sizes
-- Create word analogy and similarity tasks evaluation
-- Build semantic search system using embeddings
-- **Project:** Multilingual document similarity search engine
-
-### Week 15: Large Language Model Training
-**Difficulty:** Advanced  
-**Study Time:** 28 hours
-
-**Learning Objectives:**
-- Understand LLM training pipeline and data preparation
-- Implement GPT architecture from scratch
-- Master training techniques for large-scale language models
-
-**Theory Resources:**
-- [GPT Paper](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf) - Improving language understanding by generative pre-training
-- [GPT-2 Paper](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) - Language models are unsupervised multitask learners
-- [Training Compute-Optimal Large Language Models](https://arxiv.org/abs/2203.15556) - Chinchilla scaling laws
-
-**Practical Resources:**
-- [nanoGPT](https://github.com/karpathy/nanoGPT) - Minimal GPT implementation by Andrej Karpathy
-- [GPT-2 from Scratch](https://www.youtube.com/watch?v=kCc8FmEb1nY) - Complete implementation tutorial
-- [Hugging Face Transformers Training](https://huggingface.co/docs/transformers/training) - Large model training guide
-
-**Hands-on Assignment:**
-- Implement GPT architecture from scratch following nanoGPT
-- Train medium-sized language model on curated text corpus
-- Implement text generation with different sampling strategies
-- Create model evaluation metrics (perplexity, BLEU)
-- **Project:** Train domain-specific language model (code, literature, or science)
-
-### Week 16: LLM Optimization & Evaluation
-**Difficulty:** Advanced  
-**Study Time:** 25 hours
-
-**Learning Objectives:**
-- Master gradient accumulation and mixed precision training
-- Implement model parallelism for large models
-- Understand LLM evaluation benchmarks and metrics
-
-**Theory Resources:**
-- [Megatron-LM Paper](https://arxiv.org/abs/1909.08053) - Training multi-billion parameter language models
-- [Efficient Large-Scale Language Model Training](https://arxiv.org/abs/2104.04473) - ZeRO optimizer states partitioning
-- [HELM Paper](https://arxiv.org/abs/2211.09110) - Holistic evaluation of language models
-
-**Practical Resources:**
-- [DeepSpeed Tutorial](https://www.deepspeed.ai/tutorials/) - Memory and compute optimization
-- [Accelerate Library](https://huggingface.co/docs/accelerate/index) - Multi-GPU training simplified
-- [OpenAI Evals](https://github.com/openai/evals) - LLM evaluation framework
-
-**Hands-on Assignment:**
-- Implement gradient accumulation and mixed precision training
-- Set up model parallelism for training larger models
-- Create comprehensive LLM evaluation suite
-- Benchmark model performance on standard tasks (GLUE, SuperGLUE)
-- **Project:** Optimize training pipeline for maximum efficiency and create evaluation dashboard
-
-### Week 17: Fine-tuning & Instruction Following
-**Difficulty:** Advanced  
-**Study Time:** 24 hours
-
-**Learning Objectives:**
-- Master supervised fine-tuning techniques
-- Implement instruction tuning and prompt engineering
-- Understand parameter-efficient fine-tuning (LoRA, AdaLoRA)
-
-**Theory Resources:**
-- [InstructGPT Paper](https://arxiv.org/abs/2203.02155) - Training language models to follow instructions with human feedback
-- [LoRA Paper](https://arxiv.org/abs/2106.09685) - Low-rank adaptation of large language models
-- [Parameter-Efficient Transfer Learning](https://arxiv.org/abs/1902.00751) - Adapter modules
-
-**Practical Resources:**
-- [PEFT Library](https://github.com/huggingface/peft) - Parameter-efficient fine-tuning methods
-- [Alpaca Training](https://github.com/tatsu-lab/stanford_alpaca) - Instruction-following fine-tuning
-- [QLoRA Paper](https://arxiv.org/abs/2305.14314) - Efficient finetuning of quantized LLMs
-
-**Hands-on Assignment:**
-- Fine-tune pre-trained language model on instruction-following dataset
-- Implement LoRA and compare with full fine-tuning
-- Create custom instruction dataset for specific domain
-- Build chat interface for instruction-tuned model
-- **Project:** Create specialized assistant (coding, writing, or domain expert) with custom fine-tuning
-
-### Week 18: Quantization & Model Compression
-**Difficulty:** Advanced  
-**Study Time:** 22 hours
-
-**Learning Objectives:**
-- Understand quantization techniques (post-training and quantization-aware training)
-- Implement model pruning and knowledge distillation
-- Master deployment of compressed models
-
-**Theory Resources:**
-- [Quantization and Training of Neural Networks](https://arxiv.org/abs/1712.05877) - Comprehensive quantization survey
-- [Knowledge Distillation Paper](https://arxiv.org/abs/1503.02531) - Distilling knowledge in neural networks
-- [GPTQ Paper](https://arxiv.org/abs/2210.17323) - Accurate post-training quantization for GPT models
-
-**Practical Resources:**
-- [PyTorch Quantization](https://pytorch.org/docs/stable/quantization.html) - Official quantization toolkit
-- [BitsAndBytes](https://github.com/TimDettmers/bitsandbytes) - 8-bit optimizers and quantization
-- [AutoGPTQ](https://github.com/PanQiWei/AutoGPTQ) - Quantization toolkit for LLMs
-
-**Hands-on Assignment:**
-- Implement post-training quantization (PTQ) and quantization-aware training (QAT)
-- Compare model performance vs. compression trade-offs
-- Create knowledge distillation pipeline to compress large models
-- Deploy quantized models for edge inference
-- **Project:** Create model compression benchmark suite comparing different techniques
+💸: CPU only; focus on tooling and hygiene.
 
 ---
 
-## PHASE 3: ADVANCED AI APPLICATIONS
-*Weeks 19-24: Multimodal AI, RL, and Production Systems*
+### Week 3: PyTorch Deep Dive & Cloud Training 🔹
+**Study Time:** ~18–22h
+**Objectives:** tensors/autograd, custom Dataset/DataLoader, GPU basics
 
-### Week 19: Vision-Language Models
-**Difficulty:** Advanced  
-**Study Time:** 26 hours
+Theory/Practical:
+- 🔹 PyTorch Tutorials (fundamentals): `https://pytorch.org/tutorials/`
+- 🔹 PyTorch Examples: `https://github.com/pytorch/examples`
+- 🧩 Colab guide: `https://colab.research.google.com/notebooks/intro.ipynb`
 
-**Learning Objectives:**
-- Understand multimodal learning and cross-modal attention
-- Implement CLIP-style contrastive learning
-- Build vision-language applications
+Assignments:
+- Linear/logistic regression, feedforward net in PyTorch
+- Custom dataset/dataloader; train small CNN on CIFAR-10
 
-**Theory Resources:**
-- [CLIP Paper](https://arxiv.org/abs/2103.00020) - Learning transferable visual models from natural language supervision
-- [DALL-E Paper](https://arxiv.org/abs/2102.12092) - Zero-shot text-to-image generation
-- [Flamingo Paper](https://arxiv.org/abs/2204.14198) - Few-shot learning with frozen language models
-
-**Practical Resources:**
-- [OpenCLIP Implementation](https://github.com/mlfoundations/open_clip) - Open source CLIP training
-- [LAION Dataset](https://laion.ai/) - Large-scale image-text pairs
-- [Hugging Face Vision-Language Models](https://huggingface.co/models?pipeline_tag=visual-question-answering) - Pre-trained VLMs
-
-**Hands-on Assignment:**
-- Implement CLIP-style contrastive learning from scratch
-- Train vision-language model on curated image-text dataset
-- Build zero-shot image classification using text prompts
-- Create visual question answering system
-- **Project:** Multimodal search engine with text and image queries
-
-### Week 20: Reinforcement Learning Fundamentals
-**Difficulty:** Intermediate-Advanced  
-**Study Time:** 24 hours
-
-**Learning Objectives:**
-- Master RL problem formulation (MDPs, value functions, policies)
-- Implement Q-learning and policy gradient methods
-- Understand exploration vs. exploitation trade-offs
-
-**Theory Resources:**
-- [Sutton & Barto RL Book](http://incompleteideas.net/book/the-book-2nd.html) - Chapters 1-6 (free online textbook)
-- [David Silver RL Course](https://www.youtube.com/playlist?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ) - DeepMind RL lectures
-- [OpenAI Spinning Up](https://spinningup.openai.com/en/latest/) - Deep RL introduction
-
-**Practical Resources:**
-- [Stable Baselines3](https://stable-baselines3.readthedocs.io/) - High-quality RL implementations
-- [OpenAI Gymnasium](https://gymnasium.farama.org/) - RL environment toolkit
-- [CleanRL](https://github.com/vwxyzjn/cleanrl) - Single-file RL implementations
-
-**Hands-on Assignment:**
-- Implement Q-learning and SARSA for gridworld environment
-- Train DQN on Atari games using Stable Baselines3
-- Create custom RL environment using Gymnasium interface
-- Compare different exploration strategies
-- **Project:** Multi-agent RL system (trading, game-playing, or robotics simulation)
-
-### Week 21: Advanced Reinforcement Learning
-**Difficulty:** Advanced  
-**Study Time:** 25 hours
-
-**Learning Objectives:**
-- Implement policy gradient methods (REINFORCE, Actor-Critic, PPO)
-- Understand continuous action spaces and control problems
-- Master advanced RL algorithms (SAC, TD3, DDPG)
-
-**Theory Resources:**
-- [Policy Gradient Methods Paper](https://papers.nips.cc/paper/1713-policy-gradient-methods-for-reinforcement-learning-with-function-approximation.pdf) - Theoretical foundations
-- [PPO Paper](https://arxiv.org/abs/1707.06347) - Proximal policy optimization
-- [SAC Paper](https://arxiv.org/abs/1801.01290) - Soft actor-critic
-
-**Practical Resources:**
-- [PPO Implementation](https://github.com/openai/baselines/tree/master/baselines/ppo2) - OpenAI baseline implementation
-- [PyBullet Environments](https://pybullet.org/) - Physics simulation for continuous control
-- [Ray RLLib](https://docs.ray.io/en/latest/rllib/index.html) - Distributed RL training
-
-**Hands-on Assignment:**
-- Implement PPO from scratch for continuous control tasks
-- Train agents on MuJoCo/PyBullet robotic control tasks
-- Create multi-agent reinforcement learning scenario
-- Compare sample efficiency of different algorithms
-- **Project:** Autonomous driving or robot navigation using deep RL
-
-### Week 22: RLHF & AI Alignment
-**Difficulty:** Advanced  
-**Study Time:** 23 hours
-
-**Learning Objectives:**
-- Understand reinforcement learning from human feedback (RLHF)
-- Implement reward modeling and preference learning
-- Master constitutional AI and AI safety techniques
-
-**Theory Resources:**
-- [InstructGPT Paper](https://arxiv.org/abs/2203.02155) - Training language models to follow instructions with human feedback
-- [Constitutional AI Paper](https://arxiv.org/abs/2212.08073) - Training a helpful and harmless assistant
-- [Reward Modeling Paper](https://arxiv.org/abs/1909.12917) - Fine-tuning language models from human preferences
-
-**Practical Resources:**
-- [TRL Library](https://github.com/huggingface/trl) - Transformer reinforcement learning
-- [Open Assistant Dataset](https://huggingface.co/datasets/OpenAssistant/oasst1) - Human feedback conversations
-- [RLHF Implementation](https://github.com/CarperAI/trlx) - Training with human feedback
-
-**Hands-on Assignment:**
-- Implement reward model training using human preference data
-- Create RLHF pipeline for instruction-following fine-tuning
-- Build human feedback collection interface
-- Compare RLHF with supervised fine-tuning
-- **Project:** Safe AI assistant with constitutional training and red teaming evaluation
-
-### Week 23: Large-Scale Model Training
-**Difficulty:** Advanced  
-**Study Time:** 30 hours
-
-**Learning Objectives:**
-- Implement data parallelism and model parallelism for 70B+ models
-- Master gradient checkpointing and memory optimization
-- Understand training infrastructure and monitoring
-
-**Theory Resources:**
-- [Megatron-LM Paper](https://arxiv.org/abs/1909.08053) - Training multi-billion parameter models
-- [GPT-3 Paper](https://arxiv.org/abs/2005.14165) - Language models are few-shot learners
-- [PaLM Paper](https://arxiv.org/abs/2204.02311) - Pathways language model scaling
-
-**Practical Resources:**
-- [Megatron-DeepSpeed](https://github.com/microsoft/Megatron-DeepSpeed) - Large-scale training framework
-- [FairScale](https://github.com/facebookresearch/fairscale) - PyTorch extensions for large-scale training
-- [Colossal-AI](https://github.com/hpcaitech/ColossalAI) - Making large AI models cheaper and more accessible
-
-**Hands-on Assignment:**
-- Set up distributed training environment for multi-node training
-- Implement gradient accumulation and pipeline parallelism
-- Train 7B parameter model using model parallelism techniques
-- Create comprehensive training monitoring and logging
-- **Project:** End-to-end large model training pipeline with infrastructure automation
-
-### Week 24: Production AI Systems
-**Difficulty:** Advanced  
-**Study Time:** 25 hours
-
-**Learning Objectives:**
-- Master MLOps best practices for production AI systems
-- Implement model serving, monitoring, and automated retraining
-- Build scalable AI infrastructure with containerization and orchestration
-
-**Theory Resources:**
-- [MLOps Principles](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning) - Google Cloud MLOps guide
-- [Hidden Technical Debt in ML Systems](https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf) - Production ML challenges
-- [ML Model Serving Patterns](https://martinfowler.com/articles/ml-inference-patterns.html) - Deployment architecture patterns
-
-**Practical Resources:**
-- [MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp) - Free comprehensive MLOps course
-- [BentoML](https://github.com/bentoml/BentoML) - Model serving framework
-- [Seldon Core](https://github.com/SeldonIO/seldon-core) - ML deployment on Kubernetes
-
-**Hands-on Assignment:**
-- Create complete MLOps pipeline with CI/CD for model deployment
-- Implement model monitoring and drift detection systems
-- Build API gateway for multiple model serving with load balancing
-- Create automated model retraining pipeline
-- **Project:** Production-ready AI service with monitoring, logging, and automated scaling
+💸: Start using free GPU tiers; compare CPU vs GPU timings.
 
 ---
 
-## PHASE 4: CAPSTONE PROJECT
-*Weeks 25-26: Integration and Portfolio Development*
+### Week 4: First End-to-End Training Loop 🔹
+**Study Time:** ~20h
+**Objectives:** robust training loop, validation/test, augmentation, logging
 
-### Week 25-26: Comprehensive Capstone
-**Difficulty:** Expert Level  
-**Study Time:** 40+ hours
+Theory/Practical:
+- 🔹 PyTorch training loop tutorial: `https://pytorch.org/tutorials/beginner/introyt/trainingyt.html`
+- 🧩 DeepLearning.AI specialization (audit): `https://www.coursera.org/learn/deep-neural-network`
+- 🧩 Albumentations docs: `https://albumentations.ai/`
+- 🧩 PyTorch Lightning intro: `https://lightning.ai/docs/pytorch/stable/`
 
-**Learning Objectives:**
-- Integrate all learned techniques into comprehensive AI system
-- Demonstrate production-ready implementation skills
-- Create portfolio-worthy project with real-world impact
+Project:
+- CIFAR-10 ResNet-18 with aug, LR scheduling, early stopping; W&B logging `https://wandb.ai/`
 
-**Capstone Project Options:**
-
-### **Option 1: Multimodal AI Assistant**
-Build a comprehensive AI assistant that can:
-- Process text, images, and voice inputs
-- Generate text, images, and speech outputs
-- Maintain conversation context and user preferences
-- Learn and adapt from user feedback
-
-**Technical Requirements:**
-- Custom transformer architecture with multimodal fusion
-- RLHF training pipeline for alignment
-- Production deployment with API endpoints
-- Real-time inference optimization
-- Comprehensive evaluation and safety testing
-
-### **Option 2: Large Language Model from Scratch**
-Train a domain-specific large language model:
-- Custom dataset curation and preprocessing
-- Distributed training on cloud infrastructure
-- Complete pretraining and instruction-tuning pipeline
-- Quantization and optimization for deployment
-- Evaluation on domain-specific benchmarks
-
-**Technical Requirements:**
-- 7B+ parameter model architecture
-- Multi-GPU/multi-node training setup
-- Custom tokenizer and preprocessing pipeline
-- RLHF fine-tuning implementation
-- Production serving infrastructure
-
-### **Option 3: AI-Powered Content Creation Platform**
-Create comprehensive content generation system:
-- Text generation with style and tone control
-- Image generation with text prompts
-- Video summarization and highlights
-- Multi-language support with translation
-- Content moderation and safety filters
-
-**Technical Requirements:**
-- Multiple generative models integration
-- Real-time content generation API
-- User interface with advanced controls
-- Content quality evaluation metrics
-- Scalable cloud deployment
-
-### **Final Deliverables:**
-1. **Complete codebase** with documentation on GitHub
-2. **Technical report** (15-20 pages) documenting architecture, experiments, and results
-3. **Live demo deployment** accessible via web interface
-4. **Video presentation** (10-15 minutes) explaining project and results
-5. **Performance benchmarks** comparing to existing solutions
-6. **Open source release** with tutorial and setup instructions
-
-**Evaluation Criteria:**
-- **Technical Innovation:** Novel approaches and implementations (25%)
-- **Code Quality:** Clean, documented, tested code (20%)
-- **Performance:** Quantitative results and benchmarks (20%)
-- **Production Readiness:** Deployment, monitoring, scalability (20%)
-- **Impact Potential:** Real-world applicability and usefulness (15%)
+💸: Kaggle GPUs; checkpoint runs.
 
 ---
 
-## **RESOURCES SUMMARY**
+### Week 5: CNNs & Backpropagation Deep Dive 🔹
+**Study Time:** ~18–22h
+**Objectives:** conv operations, manual backprop intuition, visualize grads
 
-### **Primary Learning Platforms**
-- **Fast.ai Course**: Practical deep learning methodology
-- **3Blue1Brown**: Mathematical intuition and visualization
-- **Hugging Face**: Transformer models and modern NLP
-- **Papers with Code**: Latest research with implementations
-- **Google Colab**: Free GPU/TPU access for training
-- **Kaggle**: Datasets, competitions, and community notebooks
+Theory:
+- 🔹 Stanford CS231n CNN lectures: `http://cs231n.stanford.edu/schedule.html`
+- 🧩 3Blue1Brown backprop: `https://www.youtube.com/watch?v=Ilg3gGewQ5U`
+- 🧩 Convolution arithmetic: `https://github.com/vdumoulin/conv_arithmetic`
 
-### **Essential Tools & Frameworks**
-- **PyTorch**: Primary deep learning framework
-- **Hugging Face Transformers**: Pre-trained models and tokenizers
-- **Weights & Biases**: Experiment tracking and visualization
-- **Docker**: Containerization for reproducible environments
-- **Git/GitHub**: Version control and code sharing
-- **Streamlit/Gradio**: Quick deployment and demonstration
+Practical:
+- Implement 2D conv + maxpool from scratch
+- Build CNN for CIFAR-10; visualize feature maps and gradients
 
-### **Recommended Study Schedule**
-- **Weekdays (Mon-Fri):** 2-3 hours daily (theory, reading, small coding exercises)
-- **Weekends:** 8-10 hours (major implementations, projects, assignments)
-- **Total:** 20-25 hours per week average
-- **Peak weeks:** 30+ hours during advanced topics and capstone
+---
 
-### **Success Metrics & Milestones**
-- **Weeks 1-6:** Complete computer vision fundamentals with deployable projects
-- **Weeks 7-12:** Advanced CV techniques with production-quality implementations
-- **Weeks 13-18:** Transformer mastery with custom LLM training
-- **Weeks 19-24:** Multimodal AI and production systems expertise
-- **Weeks 25-26:** Capstone project demonstrating integration of all skills
+### Week 6: Advanced CNN Architectures 🔹
+**Study Time:** ~22–25h
+**Objectives:** ResNet/DenseNet/EfficientNet, transfer learning
 
-This comprehensive 26-week program provides the depth and breadth of the ERA V4 course using entirely free resources, with emphasis on hands-on implementation and production-ready skills. Each week builds upon previous knowledge while introducing increasingly sophisticated concepts, culminating in a portfolio-worthy capstone project that demonstrates mastery of modern AI techniques.
+Theory/Practical:
+- 🔹 ResNet paper: `https://arxiv.org/abs/1512.03385`
+- 🧩 EfficientNet paper: `https://arxiv.org/abs/1905.11946`
+- 🔹 timm models: `https://github.com/rwightman/pytorch-image-models`
+- 🔹 Transfer learning tutorial: `https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html`
+
+Assignments:
+- Implement ResNet blocks from scratch
+- Compare multiple CNNs on ImageNet subset
+
+---
+
+### Week 7: Training Optimization & Regularization 🔹
+**Study Time:** ~20–24h
+**Objectives:** optimizers, schedulers, BN, regularization, monitoring
+
+Theory/Practical:
+- 🔹 DL Book Ch.8 (optimization): `https://www.deeplearningbook.org/contents/optimization.html`
+- 🧩 Adam paper: `https://arxiv.org/abs/1412.6980`
+- 🧩 BatchNorm paper: `https://arxiv.org/abs/1502.03167`
+- 🧩 LR finder: `https://github.com/davidtvs/pytorch-lr-finder`
+
+Assignments:
+- Implement/compare Adam, AdamW, RMSprop, SAM/Lion 🧩
+- LR scheduling experiments; dashboard for monitoring
+
+---
+
+### Week 8: One Cycle Policy & Advanced Training 🔹
+**Study Time:** ~18–22h
+**Objectives:** OneCycleLR, gradient clipping, stability, scaling awareness
+
+Theory/Practical:
+- 🔹 OneCycleLR (PyTorch): `https://pytorch.org/docs/stable/generated/torch.optim.lr_scheduler.OneCycleLR.html`
+- 🧩 Leslie Smith cyclical LR: `https://arxiv.org/abs/1506.01186`
+- 🧩 One Cycle policy: `https://arxiv.org/abs/1708.07120`
+
+Project:
+- Train CIFAR-10 to ≥94% in <100 epochs with OneCycleLR
+
+---
+
+### Week 9: ImageNet-Scale & Distributed Training 🔹 🚀
+**Study Time:** ~25–30h
+**Objectives:** DDP, data loading optimizations, mixed precision
+
+Theory/Practical:
+- 🔹 PyTorch DDP tutorial: `https://pytorch.org/tutorials/intermediate/ddp_tutorial.html`
+- 🧩 Large minibatch ImageNet best practices: `https://arxiv.org/abs/1812.01187`
+- 🧩 Mixed precision (AMP): `https://arxiv.org/abs/1710.03740`
+
+Projects:
+- 🔹💸 Train ResNet-50 on ImageNet-100/Imagenette with AMP + grad accumulation
+- 🚀🧩 Full ImageNet from scratch with multi-GPU (document costs and infra)
+
+💸: Use subsets, multiple sessions with checkpointing, and credits (see strategy).
+
+---
+
+### Week 10: Computer Vision Applications 🧩
+**Study Time:** ~20h
+Object detection, segmentation, real-time demos
+
+Resources:
+- YOLO paper: `https://arxiv.org/abs/1506.02640` | YOLOv5: `https://github.com/ultralytics/yolov5`
+- Detectron2: `https://detectron2.readthedocs.io/`
+- U-Net: `https://arxiv.org/abs/1505.04597`
+
+---
+
+### Week 11: Generative Models Intro (VAE/GAN) 🧩
+**Study Time:** ~22h
+Resources:
+- VAE paper: `https://arxiv.org/abs/1312.6114` | PyTorch VAE: `https://github.com/pytorch/examples/tree/main/vae`
+- GAN paper: `https://arxiv.org/abs/1406.2661` | DCGAN: `https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html`
+
+---
+
+### Week 12: CV Capstone 🧩
+Pick one domain project (traffic analysis, medical imaging, agriculture, retail). Include custom data, deployment, and evaluation.
+
+---
+
+[Back to top](#top)
+
+<a id="phase-2"></a>
+
+## Phase 2: Transformers & LLMs (Weeks 13–18)
+
+### Week 13: Transformer Architecture Deep Dive 🔹
+**Study Time:** ~20–25h
+**Objectives:** attention, multi-head attention, positional encodings
+
+Resources:
+- 🔹 Attention Is All You Need: `https://arxiv.org/abs/1706.03762`
+- 🔹 Illustrated Transformer: `https://jalammar.github.io/illustrated-transformer/`
+- 🧩 Annotated Transformer: `http://nlp.seas.harvard.edu/annotated-transformer/`
+- 🧩 3Blue1Brown on attention: `https://www.youtube.com/watch?v=eMlx5fFNoYc`
+- 🧩 PyTorch transformer tutorial: `https://pytorch.org/tutorials/beginner/transformer_tutorial.html`
+
+Assignments:
+- Implement multi-head attention + positional encodings from scratch
+- Build encoder–decoder; visualization of attention maps
+
+---
+
+### Week 14: Embeddings & Tokenization 🔹
+**Study Time:** ~20h
+Resources:
+- Word2Vec: `https://arxiv.org/abs/1301.3781` | HF embeddings tutorial: `https://pytorch.org/tutorials/beginner/nlp/word_embeddings_tutorial.html`
+- BPE/SentencePiece: `https://arxiv.org/abs/1508.07909` | `https://arxiv.org/abs/1808.06226`
+- HF Tokenizers: `https://huggingface.co/docs/tokenizers/python/latest/`
+- 🧩 Karpathy tokenizer video: `https://www.youtube.com/watch?v=zduSFxRajkE`
+
+Assignments:
+- Train BPE tokenizer on corpus; embeddings; semantic search mini-project
+
+---
+
+### Week 14b: Retrieval-Augmented Generation (RAG) 🧩
+**Study Time:** ~18h
+Resources:
+- LangChain RAG tutorial: `https://python.langchain.com/docs/tutorials/rag/`
+- A Simple Guide to RAG: `https://www.manning.com/books/a-simple-guide-to-retrieval-augmented-generation`
+
+Projects:
+- Build a RAG pipeline with multiple retrievers and reranking; add context compression and query optimization
+
+---
+
+### Week 15: LLM Training (GPT) 🔹 🚀
+**Study Time:** ~28h
+Resources:
+- GPT/GPT-2 papers: `https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf`, `https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf`
+- Chinchilla scaling: `https://arxiv.org/abs/2203.15556`
+- nanoGPT: `https://github.com/karpathy/nanoGPT`
+- Karpathy’s GPT from scratch: `https://www.youtube.com/watch?v=kCc8FmEb1nY`
+
+Projects:
+- 🔹💸 Train 20–50M param toy GPT on TinyStories/Wiki subset with AMP + grad accumulation
+- 🚀🧩 125M+ params pretraining; document infra and costs
+
+---
+
+### Week 16: LLM Optimization & Evaluation 🔹
+**Study Time:** ~25h
+Resources:
+- Megatron-LM: `https://arxiv.org/abs/1909.08053` | ZeRO: `https://arxiv.org/abs/2104.04473`
+- DeepSpeed tutorials: `https://www.deepspeed.ai/tutorials/`
+- HF Accelerate: `https://huggingface.co/docs/accelerate/index`
+- HELM: `https://arxiv.org/abs/2211.09110` | OpenAI Evals: `https://github.com/openai/evals`
+
+Assignments:
+- Mixed precision, grad accumulation, model parallelism basics
+- Build evaluation suite (perplexity, GLUE/SuperGLUE where applicable)
+
+---
+
+### Week 17: Supervised Fine-tuning & Instruction Tuning 🔹
+**Study Time:** ~24h
+Resources:
+- InstructGPT: `https://arxiv.org/abs/2203.02155`
+- PEFT/LoRA: `https://github.com/huggingface/peft` | `https://arxiv.org/abs/2106.09685`
+- QLoRA paper: `https://arxiv.org/abs/2305.14314`
+
+Assignments:
+- Fine-tune a pretrained model (SFT) on instruction data; implement LoRA and compare with full FT
+
+---
+
+### Week 18: Quantization & Model Compression 🔹
+**Study Time:** ~22–26h
+Resources:
+- PyTorch Quantization/QAT: `https://pytorch.org/docs/stable/quantization.html`
+- BitsAndBytes (8-bit): `https://github.com/TimDettmers/bitsandbytes`
+- AutoGPTQ: `https://github.com/PanQiWei/AutoGPTQ`
+- Knowledge Distillation: `https://arxiv.org/abs/1503.02531`
+- 🧩 QAT deep dive (TorchAO/IBM guides)
+
+Project:
+- Implement PTQ + QAT on transformer; compare FP32/FP16/INT8 latency & accuracy
+
+---
+
+[Back to top](#top)
+
+<a id="phase-3"></a>
+
+## Phase 3: Advanced Applications (Weeks 19–22)
+
+### Week 19: Vision–Language Models (CLIP) 🔹
+**Study Time:** ~20–26h
+Resources:
+- CLIP paper: `https://arxiv.org/abs/2103.00020`
+- OpenCLIP: `https://github.com/mlfoundations/open_clip`
+- 🧩 DALL·E: `https://arxiv.org/abs/2102.12092`, Flamingo: `https://arxiv.org/abs/2204.14198`
+
+Assignments:
+- Implement CLIP-style contrastive training; zero-shot classification; VQA 🧩
+
+---
+
+### Week 20: Reinforcement Learning Fundamentals 🧩
+Resources:
+- Sutton & Barto (Ch.1–6): `http://incompleteideas.net/book-the-book-2nd.html`
+- David Silver Lectures: `https://www.youtube.com/playlist?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ`
+- OpenAI Spinning Up: `https://spinningup.openai.com/en/latest/`
+
+Assignments:
+- Tabular Q-learning/SARSA; DQN via Stable-Baselines3 (Optional)
+
+---
+
+### Week 21: Advanced RL (PPO/SAC/TD3/DDPG) 🧩
+Resources:
+- PPO: `https://arxiv.org/abs/1707.06347`, SAC: `https://arxiv.org/abs/1801.01290`
+- CleanRL: `https://github.com/vwxyzjn/cleanrl`
+- Ray RLlib: `https://docs.ray.io/en/latest/rllib/`
+
+---
+
+### Week 22: RLHF & Alignment 🔹
+Resources:
+- HF RLHF Guide: `https://huggingface.co/blog/rlhf` | TRL: `https://github.com/huggingface/trl`
+- Reward Modeling: `https://arxiv.org/abs/1909.12917`
+- Constitutional AI: `https://arxiv.org/abs/2212.08073`
+
+Project:
+- Implement reward model + PPO loop for a small SFT model; compare RLHF vs SFT
+
+---
+
+### Optional Modules for Phase 3 (choose per interest and time)
+
+- Advanced Multi-Modal Architectures 🧩
+  - Resources: CMU MultiModal ML `https://cmu-mmml.github.io/spring2023/`, DeepLearning.AI multimodal short course `https://www.deeplearning.ai/short-courses/building-multimodal-search-and-rag/`, Awesome Multimodal ML `https://github.com/pliang279/awesome-multimodal-ml`
+  - Projects: Multimodal transformer (text+image+audio); cross-modal retrieval; multimodal RAG
+
+- Diffusion Models 🧩
+  - Resources: Stanford CS236 (selected) `https://deepgenerativemodels.github.io/`, Diffusion overview `https://lilianweng.github.io/posts/2021-07-11-diffusion-models/`
+  - Projects: DDPM from scratch; conditional/latent diffusion; text-to-image guidance
+
+- Meta-Learning & Few-Shot Adaptation 🧩
+  - Resources: Stanford CS330 `https://cs330.stanford.edu/`, Few-Shot on PwC `https://paperswithcode.com/task/few-shot-learning`
+  - Projects: MAML from scratch; few-shot adapters for LLMs; rapid domain adaptation
+
+- AI Safety & Interpretability 🧩
+  - Resources: Interpretable ML Class `https://interpretable-ml-class.github.io/`, Duke XAI Specialization `https://www.coursera.org/specializations/explainable-artificial-intelligence-xai`
+  - Projects: Mechanistic interpretability for transformers; explanation tooling; red teaming and safety evals
+
+---
+
+[Back to top](#top)
+
+<a id="phase-4"></a>
+
+## Phase 4: Large-Scale Training & Production (Weeks 23–24)
+
+### Week 23: Large-Scale Model Training 🚀
+Resources:
+- Megatron-DeepSpeed: `https://github.com/microsoft/Megatron-DeepSpeed`
+- FairScale: `https://github.com/facebookresearch/fairscale`
+- Colossal-AI: `https://github.com/hpcaitech/ColossalAI`
+- HF parallelism guide: `https://huggingface.co/docs/transformers/perf_train_gpu_many`
+
+Assignments:
+- 3D parallelism (data/tensor/pipeline) on 7B-class toy config [simulated/budgeted]
+- Monitoring & logging for long runs; checkpointing strategy
+
+💸: Use distillation and QLoRA if full pretraining isn’t feasible.
+
+---
+
+### Week 24: Serving, Optimization, and MLOps 🔹 🚀
+Resources:
+- NVIDIA Triton Inference Server: `https://docs.nvidia.com/deeplearning/triton-inference-server/`
+- TensorRT: `https://developer.nvidia.com/tensorrt` | Torch-TensorRT: `https://pytorch.org/TensorRT/`
+- ONNX Runtime perf: `https://onnxruntime.ai/docs/performance/model-optimizations/`
+- MLOps Zoomcamp: `https://github.com/DataTalksClub/mlops-zoomcamp`
+- BentoML: `https://github.com/bentoml/BentoML` | Seldon Core: `https://github.com/SeldonIO/seldon-core`
+
+Projects:
+- Optimize transformer for 5–10x inference speedup (quantization + TensorRT/ONNX)
+- Deploy via Triton/BentoML; add monitoring, drift detection, and CI/CD
+
+---
+
+[Back to top](#top)
+
+<a id="phase-5"></a>
+
+## Phase 5: Capstone & Portfolio (Weeks 25–26) 🔹
+
+Pick one comprehensive project and deliver production-grade assets:
+
+Options:
+1) Multimodal AI Assistant (text+image+voice), with RAG and RLHF
+2) LLM From Scratch (domain-specific): pretrain → SFT → RLHF → quantize → serve
+3) Production Recommender or CV system with A/B testing and autoscaling
+4) Research Reproduction + Extension (novel contribution)
+
+Final deliverables:
+- Complete codebase with tests and docs
+- Live demo (HF Spaces/Cloud) + API endpoint
+- Technical report (15–20 pages) + video walkthrough (10–15 min)
+- Benchmarks and ablation studies
+
+---
+
+[Back to top](#top)
+
+<a id="compute"></a>
+
+## Compute Resource Strategy 💸
+
+Tier 1 (Free):
+- Google Colab Free (T4/K80/P100), 12h sessions
+- Kaggle Kernels (30–41h/week, P100), 9h sessions
+- Paperspace Free (limited)
+
+Tier 2 (Low-cost):
+- Colab Pro (~$10/mo), longer sessions, better GPUs
+- Paperspace Pro (~$8/mo) A4000
+- RunPod serverless (~$0.19–3.19/h)
+
+Tier 3 (Credits — apply early, Week 1):
+- AWS Research Credits (up to ~$5k)
+- Google Cloud Research (student/faculty tiers)
+- Azure for Students ($100)
+
+Heavy weeks guidance:
+- Week 9 (ImageNet): use ImageNet-100/Imagenette; AMP + grad accumulation; multiple sessions + checkpointing
+- Week 15 (LLM pretraining): 20–50M param toy models; stream datasets; mixed precision; resumeable training
+- Week 23 (7B+ systems): prioritize distillation and QLoRA; focus on infra + correctness over raw scale
+
+---
+
+[Back to top](#top)
+
+<a id="schedule"></a>
+
+## Study Schedule & Success Strategies
+
+Weekly structure (~20h avg):
+- Theory/Research (5h), Hands-on (10h), Community (2h), Docs/Reflection (3h)
+
+Success tips:
+1) Apply for credits in Week 1; approvals can take 90–120 days
+2) Checkpoint all long runs; automate resume
+3) Implement from scratch first; then lean on libraries
+4) Track experiments (W&B) and write weekly notes
+5) Engage with communities (Discord, forums); ask/answer questions
+
+---
+
+[Back to top](#top)
+
+## Success Metrics & Milestones
+
+- Week 6: Train ResNet-50 on ImageNet subset with documented pipeline
+- Week 10–12: Deployed CV app or capstone-lite
+- Week 15–16: Train and evaluate a small GPT; implement mixed precision + accumulation
+- Week 18: QAT/quantization results with latency/accuracy trade-offs
+- Week 19: Working CLIP zero-shot system
+- Week 24: 5–10x inference speedup + production deployment
+- Week 26: Portfolio-ready capstone with live demo and report
+
+---
+
+[Back to top](#top)
+
+<a id="resources"></a>
+
+## Resources Summary
+
+Primary platforms:
+- Fast.ai, 3Blue1Brown, Hugging Face, Papers with Code, Google Colab, Kaggle
+
+Essential tools:
+- PyTorch, Transformers, W&B, Docker, Git/GitHub, Streamlit/Gradio
+- DeepSpeed, Accelerate, PEFT, BitsAndBytes, AutoGPTQ
+- Triton, TensorRT/Torch-TensorRT, ONNX Runtime, BentoML, Seldon Core
+
+Reference implementations:
+- PyTorch Examples, nanoGPT, OpenCLIP, Megatron-DeepSpeed, FairScale, Colossal-AI
+
+---
+
+## Notes on Optionality & Advanced Paths
+
+- All 🧩 items preserve breadth from the comprehensive and advanced plans without bloating the core track.
+- 🚀 items aggregate the production/deployment/scaling focus from `plan-sonnet4.md`.
+- 💸 fallbacks consolidate the compute guidance from `plan basic.md` and are referenced where runs are heavy.
+
+This consolidated plan retains all core topics and resources from the three originals, with clear markings so you can tailor depth and compute to your context without losing information.
+
+# End of Hero Plan
