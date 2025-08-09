@@ -2,50 +2,24 @@
 
 A structured workspace for a 26-week self-study program inspired by ERA V4. This repo includes a clean project layout, segmented requirements, dev tooling, and starter notebooks to help you progress from fundamentals to advanced topics.
 
-## Quickstart (Recommended)
+## Quickstart (uv recommended)
 
-If your system Python venv is problematic, use the Virtualenv flow below.
+Install `uv` (one-time):
+- macOS (Homebrew): `brew install uv`
+- Shell script: `curl -LsSf https://astral.sh/uv/install.sh | sh`
+- Ensure `uv` is on PATH (if needed): `export PATH="$HOME/.local/bin:$PATH"`
 
-### Option A: Virtualenv (most reliable)
-
+Setup and run:
 ```bash
-python3 -m pip install --user virtualenv
-python3 -m virtualenv .venv
+uv venv .venv
 source .venv/bin/activate
-python -m pip install -U pip setuptools wheel
-pip install -r requirements.txt
+uv pip install -r requirements.txt
 pre-commit install
 python -m ipykernel install --user --name era-v4 --display-name "Python (era-v4)"
 
 jupyter lab
 ```
 
-### Option B: Standard venv
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -U pip setuptools wheel
-pip install -r requirements.txt
-pre-commit install
-python -m ipykernel install --user --name era-v4 --display-name "Python (era-v4)"
-
-jupyter lab
-```
-
-### Option C: uv (fast)
-
-Install `uv` once: `curl -LsSf https://astral.sh/uv/install.sh | sh`
-
-```bash
-~/.local/bin/uv venv .venv
-source .venv/bin/activate
-~/.local/bin/uv pip install -r requirements.txt
-pre-commit install
-python -m ipykernel install --user --name era-v4 --display-name "Python (era-v4)"
-
-jupyter lab
-```
 
 ## Repo Layout
 
