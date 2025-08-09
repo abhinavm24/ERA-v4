@@ -29,6 +29,7 @@ jupyter lab
 
 - `docs/` – course plan and notes
 - `notebooks/` – weekly notebooks (start with `week01`)
+ - `notebooks/` – weekly notebooks (start with `week00` for Mac MPS check, then `week01`)
 - `src/` – reusable Python modules/utilities
 - `requirements/` – segmented dependencies
 - `scripts/` – helper CLI utilities (add as needed)
@@ -37,3 +38,7 @@ jupyter lab
 ## Notes on PyTorch
 
 Install instructions vary by OS/GPU. If the default install fails, use the official selector: `https://pytorch.org/get-started/locally/`. For GPU training, Colab/Kaggle is often the quickest path.
+
+- macOS MPS quick test notebook: [notebooks/week00/00_mac_torch_gpu_acceleration.ipynb](notebooks/week00/00_mac_torch_gpu_acceleration.ipynb)
+  - Installs `requirements/cv.txt` using `uv`
+  - Asserts MPS availability and runs a small matmul on the `mps` device
