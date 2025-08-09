@@ -1,0 +1,7 @@
+# Reinforcement Learning
+gymnasium
+stable-baselines3
+pygame
+pybullet
+
+

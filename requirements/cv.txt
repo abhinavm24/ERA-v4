@@ -1,0 +1,10 @@
+# Computer Vision
+torch
+torchvision
+torchaudio
+opencv-python
+albumentations
+timm
+scikit-image
+
+

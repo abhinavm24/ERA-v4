@@ -1,0 +1,8 @@
+# Deployment / Apps
+streamlit
+gradio
+fastapi
+uvicorn
+bentoml
+
+

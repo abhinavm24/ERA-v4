@@ -1,0 +1,11 @@
+# NLP / LLMs
+transformers
+datasets
+tokenizers
+accelerate
+sentencepiece
+peft
+trl
+bitsandbytes
+
+
