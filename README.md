@@ -33,7 +33,3 @@ jupyter lab
 ## Notes on PyTorch
 
 Install instructions vary by OS/GPU. If the default install fails, use the official selector: `https://pytorch.org/get-started/locally/`. For GPU training, Colab/Kaggle is often the quickest path.
-
-## License
-
-MIT
