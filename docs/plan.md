@@ -24,11 +24,57 @@ It preserves all topics and resources. When content becomes too dense or duplica
 - Compute posture: Free-first; scale up only when needed. A full compute strategy and budget fallbacks are provided at the end and referenced inline as 💸.
 
 ## Contents
-<a id="top"></a>
-- [Phase 1: Foundations & Computer Vision (Weeks 1–12)](#phase-1)
-- [Phase 2: Transformers & Large Language Models (Weeks 13–18)](#phase-2)
-- [Phase 3: Advanced Applications (Weeks 19–22)](#phase-3)
-- [Phase 4: Large-Scale Training & Production (Weeks 23–24)](#phase-4)
+<a id="contents"></a><a id="top"></a>
+
+<details>
+<summary>Phase 1: Foundations & Computer Vision (Weeks 1–12)</summary>
+
+- [Week 1: AI Foundations & Neural Networks](#week-1)
+- [Week 2: Python Mastery & Dev Tools](#week-2)
+- [Week 3: PyTorch Deep Dive & Cloud Training](#week-3)
+- [Week 4: First End-to-End Training Loop](#week-4)
+- [Week 5: CNNs & Backpropagation Deep Dive](#week-5)
+- [Week 6: Advanced CNN Architectures](#week-6)
+- [Week 7: Training Optimization & Regularization](#week-7)
+- [Week 8: One Cycle Policy & Advanced Training](#week-8)
+- [Week 9: ImageNet-Scale & Distributed Training](#week-9)
+- [Week 10: Computer Vision Applications](#week-10)
+- [Week 11: Generative Models Intro (VAE/GAN)](#week-11)
+- [Week 12: CV Capstone](#week-12)
+
+</details>
+
+<details>
+<summary>Phase 2: Transformers & Large Language Models (Weeks 13–18)</summary>
+
+- [Week 13: Transformer Architecture Deep Dive](#week-13)
+- [Week 14: Embeddings & Tokenization](#week-14)
+- [Week 14b: Retrieval-Augmented Generation (RAG)](#week-14b)
+- [Week 15: LLM Training (GPT)](#week-15)
+- [Week 16: LLM Optimization & Evaluation](#week-16)
+- [Week 17: Supervised Fine-tuning & Instruction Tuning](#week-17)
+- [Week 18: Quantization & Model Compression](#week-18)
+
+</details>
+
+<details>
+<summary>Phase 3: Advanced Applications (Weeks 19–22)</summary>
+
+- [Week 19: Vision–Language Models (CLIP)](#week-19)
+- [Week 20: Reinforcement Learning Fundamentals](#week-20)
+- [Week 21: Advanced RL (PPO/SAC/TD3/DDPG)](#week-21)
+- [Week 22: RLHF & Alignment](#week-22)
+
+</details>
+
+<details>
+<summary>Phase 4: Large-Scale Training & Production (Weeks 23–24)</summary>
+
+- [Week 23: Large-Scale Model Training](#week-23)
+- [Week 24: Serving, Optimization, and MLOps](#week-24)
+
+</details>
+
 - [Phase 5: Capstone & Portfolio (Weeks 25–26)](#phase-5)
 - [Compute Resource Strategy (Free → Low-cost → Credits)](#compute)
 - [Study Schedule, Success Strategies, and Milestones](#schedule)
@@ -40,6 +86,7 @@ It preserves all topics and resources. When content becomes too dense or duplica
 
 ## Phase 1: Foundations & Computer Vision (Weeks 1–12)
 
+<a id="week-1"></a>
 ### Week 1: AI Foundations & Neural Networks 🔹
 **Study Time:** ~15–18h
 **Objectives:** neural net intuition, dev environment, first MLP
@@ -59,8 +106,11 @@ Deliverables:
 
 💸: CPU ok; get Colab/Kaggle accounts set up.
 
+[Back to Contents](#contents)
+
 ---
 
+<a id="week-2"></a>
 ### Week 2: Python Mastery & Dev Tools 🔹
 **Study Time:** ~12–20h
 **Objectives:** Python for ML, Git/GitHub, reproducible env
@@ -76,8 +126,11 @@ Deliverables:
 
 💸: CPU only; focus on tooling and hygiene.
 
+[Back to Contents](#contents)
+
 ---
 
+<a id="week-3"></a>
 ### Week 3: PyTorch Deep Dive & Cloud Training 🔹
 **Study Time:** ~18–22h
 **Objectives:** tensors/autograd, custom Dataset/DataLoader, GPU basics
@@ -93,8 +146,11 @@ Assignments:
 
 💸: Start using free GPU tiers; compare CPU vs GPU timings.
 
+[Back to Contents](#contents)
+
 ---
 
+<a id="week-4"></a>
 ### Week 4: First End-to-End Training Loop 🔹
 **Study Time:** ~20h
 **Objectives:** robust training loop, validation/test, augmentation, logging
@@ -110,8 +166,11 @@ Project:
 
 💸: Kaggle GPUs; checkpoint runs.
 
+[Back to Contents](#contents)
+
 ---
 
+<a id="week-5"></a>
 ### Week 5: CNNs & Backpropagation Deep Dive 🔹
 **Study Time:** ~18–22h
 **Objectives:** conv operations, manual backprop intuition, visualize grads
@@ -125,8 +184,11 @@ Practical:
 - Implement 2D conv + maxpool from scratch
 - Build CNN for CIFAR-10; visualize feature maps and gradients
 
+[Back to Contents](#contents)
+
 ---
 
+<a id="week-6"></a>
 ### Week 6: Advanced CNN Architectures 🔹
 **Study Time:** ~22–25h
 **Objectives:** ResNet/DenseNet/EfficientNet, transfer learning
@@ -141,8 +203,11 @@ Assignments:
 - Implement ResNet blocks from scratch
 - Compare multiple CNNs on ImageNet subset
 
+[Back to Contents](#contents)
+
 ---
 
+<a id="week-7"></a>
 ### Week 7: Training Optimization & Regularization 🔹
 **Study Time:** ~20–24h
 **Objectives:** optimizers, schedulers, BN, regularization, monitoring
@@ -157,8 +222,11 @@ Assignments:
 - Implement/compare Adam, AdamW, RMSprop, SAM/Lion 🧩
 - LR scheduling experiments; dashboard for monitoring
 
+[Back to Contents](#contents)
+
 ---
 
+<a id="week-8"></a>
 ### Week 8: One Cycle Policy & Advanced Training 🔹
 **Study Time:** ~18–22h
 **Objectives:** OneCycleLR, gradient clipping, stability, scaling awareness
@@ -171,8 +239,11 @@ Theory/Practical:
 Project:
 - Train CIFAR-10 to ≥94% in <100 epochs with OneCycleLR
 
+[Back to Contents](#contents)
+
 ---
 
+<a id="week-9"></a>
 ### Week 9: ImageNet-Scale & Distributed Training 🔹 🚀
 **Study Time:** ~25–30h
 **Objectives:** DDP, data loading optimizations, mixed precision
@@ -188,8 +259,11 @@ Projects:
 
 💸: Use subsets, multiple sessions with checkpointing, and credits (see strategy).
 
+[Back to Contents](#contents)
+
 ---
 
+<a id="week-10"></a>
 ### Week 10: Computer Vision Applications 🧩
 **Study Time:** ~20h
 Object detection, segmentation, real-time demos
@@ -199,18 +273,26 @@ Resources:
 - Detectron2: `https://detectron2.readthedocs.io/`
 - U-Net: `https://arxiv.org/abs/1505.04597`
 
+[Back to Contents](#contents)
+
 ---
 
+<a id="week-11"></a>
 ### Week 11: Generative Models Intro (VAE/GAN) 🧩
 **Study Time:** ~22h
 Resources:
 - VAE paper: `https://arxiv.org/abs/1312.6114` | PyTorch VAE: `https://github.com/pytorch/examples/tree/main/vae`
 - GAN paper: `https://arxiv.org/abs/1406.2661` | DCGAN: `https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html`
 
+[Back to Contents](#contents)
+
 ---
 
+<a id="week-12"></a>
 ### Week 12: CV Capstone 🧩
 Pick one domain project (traffic analysis, medical imaging, agriculture, retail). Include custom data, deployment, and evaluation.
+
+[Back to Contents](#contents)
 
 ---
 
@@ -220,6 +302,7 @@ Pick one domain project (traffic analysis, medical imaging, agriculture, retail)
 
 ## Phase 2: Transformers & LLMs (Weeks 13–18)
 
+<a id="week-13"></a>
 ### Week 13: Transformer Architecture Deep Dive 🔹
 **Study Time:** ~20–25h
 **Objectives:** attention, multi-head attention, positional encodings
@@ -235,8 +318,11 @@ Assignments:
 - Implement multi-head attention + positional encodings from scratch
 - Build encoder–decoder; visualization of attention maps
 
+[Back to Contents](#contents)
+
 ---
 
+<a id="week-14"></a>
 ### Week 14: Embeddings & Tokenization 🔹
 **Study Time:** ~20h
 Resources:
@@ -248,8 +334,11 @@ Resources:
 Assignments:
 - Train BPE tokenizer on corpus; embeddings; semantic search mini-project
 
+[Back to Contents](#contents)
+
 ---
 
+<a id="week-14b"></a>
 ### Week 14b: Retrieval-Augmented Generation (RAG) 🧩
 **Study Time:** ~18h
 Resources:
@@ -259,8 +348,11 @@ Resources:
 Projects:
 - Build a RAG pipeline with multiple retrievers and reranking; add context compression and query optimization
 
+[Back to Contents](#contents)
+
 ---
 
+<a id="week-15"></a>
 ### Week 15: LLM Training (GPT) 🔹 🚀
 **Study Time:** ~28h
 Resources:
@@ -273,8 +365,11 @@ Projects:
 - 🔹💸 Train 20–50M param toy GPT on TinyStories/Wiki subset with AMP + grad accumulation
 - 🚀🧩 125M+ params pretraining; document infra and costs
 
+[Back to Contents](#contents)
+
 ---
 
+<a id="week-16"></a>
 ### Week 16: LLM Optimization & Evaluation 🔹
 **Study Time:** ~25h
 Resources:
@@ -287,8 +382,11 @@ Assignments:
 - Mixed precision, grad accumulation, model parallelism basics
 - Build evaluation suite (perplexity, GLUE/SuperGLUE where applicable)
 
+[Back to Contents](#contents)
+
 ---
 
+<a id="week-17"></a>
 ### Week 17: Supervised Fine-tuning & Instruction Tuning 🔹
 **Study Time:** ~24h
 Resources:
@@ -299,8 +397,11 @@ Resources:
 Assignments:
 - Fine-tune a pretrained model (SFT) on instruction data; implement LoRA and compare with full FT
 
+[Back to Contents](#contents)
+
 ---
 
+<a id="week-18"></a>
 ### Week 18: Quantization & Model Compression 🔹
 **Study Time:** ~22–26h
 Resources:
@@ -313,6 +414,8 @@ Resources:
 Project:
 - Implement PTQ + QAT on transformer; compare FP32/FP16/INT8 latency & accuracy
 
+[Back to Contents](#contents)
+
 ---
 
 [Back to top](#top)
@@ -321,6 +424,7 @@ Project:
 
 ## Phase 3: Advanced Applications (Weeks 19–22)
 
+<a id="week-19"></a>
 ### Week 19: Vision–Language Models (CLIP) 🔹
 **Study Time:** ~20–26h
 Resources:
@@ -331,8 +435,11 @@ Resources:
 Assignments:
 - Implement CLIP-style contrastive training; zero-shot classification; VQA 🧩
 
+[Back to Contents](#contents)
+
 ---
 
+<a id="week-20"></a>
 ### Week 20: Reinforcement Learning Fundamentals 🧩
 Resources:
 - Sutton & Barto (Ch.1–6): `http://incompleteideas.net/book-the-book-2nd.html`
@@ -342,16 +449,22 @@ Resources:
 Assignments:
 - Tabular Q-learning/SARSA; DQN via Stable-Baselines3 (Optional)
 
+[Back to Contents](#contents)
+
 ---
 
+<a id="week-21"></a>
 ### Week 21: Advanced RL (PPO/SAC/TD3/DDPG) 🧩
 Resources:
 - PPO: `https://arxiv.org/abs/1707.06347`, SAC: `https://arxiv.org/abs/1801.01290`
 - CleanRL: `https://github.com/vwxyzjn/cleanrl`
 - Ray RLlib: `https://docs.ray.io/en/latest/rllib/`
 
+[Back to Contents](#contents)
+
 ---
 
+<a id="week-22"></a>
 ### Week 22: RLHF & Alignment 🔹
 Resources:
 - HF RLHF Guide: `https://huggingface.co/blog/rlhf` | TRL: `https://github.com/huggingface/trl`
@@ -360,6 +473,8 @@ Resources:
 
 Project:
 - Implement reward model + PPO loop for a small SFT model; compare RLHF vs SFT
+
+[Back to Contents](#contents)
 
 ---
 
@@ -389,6 +504,7 @@ Project:
 
 ## Phase 4: Large-Scale Training & Production (Weeks 23–24)
 
+<a id="week-23"></a>
 ### Week 23: Large-Scale Model Training 🚀
 Resources:
 - Megatron-DeepSpeed: `https://github.com/microsoft/Megatron-DeepSpeed`
@@ -402,8 +518,11 @@ Assignments:
 
 💸: Use distillation and QLoRA if full pretraining isn’t feasible.
 
+[Back to Contents](#contents)
+
 ---
 
+<a id="week-24"></a>
 ### Week 24: Serving, Optimization, and MLOps 🔹 🚀
 Resources:
 - NVIDIA Triton Inference Server: `https://docs.nvidia.com/deeplearning/triton-inference-server/`
@@ -415,6 +534,8 @@ Resources:
 Projects:
 - Optimize transformer for 5–10x inference speedup (quantization + TensorRT/ONNX)
 - Deploy via Triton/BentoML; add monitoring, drift detection, and CI/CD
+
+[Back to Contents](#contents)
 
 ---
 
